@@ -233,7 +233,8 @@ int main() {
    }
 
    pthread_t worker;
-   worker_t *args = malloc(sizeof args);
+   printf("%d", sizeof (struct worker_t));
+   worker_t *args = malloc(sizeof (struct worker_t));
    args->epollfd = epollfd;
    args->remoteaddr = remoteaddr;
    args->fdmax = fdmax;
