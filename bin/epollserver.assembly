@@ -1,0 +1,3026 @@
+
+epollserver_threaded.o:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000001000 <_init>:
+    1000:	f3 0f 1e fa          	endbr64 
+    1004:	48 83 ec 08          	sub    rsp,0x8
+    1008:	48 8b 05 d9 4f 00 00 	mov    rax,QWORD PTR [rip+0x4fd9]        # 5fe8 <__gmon_start__@Base>
+    100f:	48 85 c0             	test   rax,rax
+    1012:	74 02                	je     1016 <_init+0x16>
+    1014:	ff d0                	call   rax
+    1016:	48 83 c4 08          	add    rsp,0x8
+    101a:	c3                   	ret    
+
+Disassembly of section .plt:
+
+0000000000001020 <.plt>:
+    1020:	ff 35 ca 4e 00 00    	push   QWORD PTR [rip+0x4eca]        # 5ef0 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:	f2 ff 25 cb 4e 00 00 	bnd jmp QWORD PTR [rip+0x4ecb]        # 5ef8 <_GLOBAL_OFFSET_TABLE_+0x10>
+    102d:	0f 1f 00             	nop    DWORD PTR [rax]
+    1030:	f3 0f 1e fa          	endbr64 
+    1034:	68 00 00 00 00       	push   0x0
+    1039:	f2 e9 e1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    103f:	90                   	nop
+    1040:	f3 0f 1e fa          	endbr64 
+    1044:	68 01 00 00 00       	push   0x1
+    1049:	f2 e9 d1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    104f:	90                   	nop
+    1050:	f3 0f 1e fa          	endbr64 
+    1054:	68 02 00 00 00       	push   0x2
+    1059:	f2 e9 c1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    105f:	90                   	nop
+    1060:	f3 0f 1e fa          	endbr64 
+    1064:	68 03 00 00 00       	push   0x3
+    1069:	f2 e9 b1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    106f:	90                   	nop
+    1070:	f3 0f 1e fa          	endbr64 
+    1074:	68 04 00 00 00       	push   0x4
+    1079:	f2 e9 a1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    107f:	90                   	nop
+    1080:	f3 0f 1e fa          	endbr64 
+    1084:	68 05 00 00 00       	push   0x5
+    1089:	f2 e9 91 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    108f:	90                   	nop
+    1090:	f3 0f 1e fa          	endbr64 
+    1094:	68 06 00 00 00       	push   0x6
+    1099:	f2 e9 81 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    109f:	90                   	nop
+    10a0:	f3 0f 1e fa          	endbr64 
+    10a4:	68 07 00 00 00       	push   0x7
+    10a9:	f2 e9 71 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10af:	90                   	nop
+    10b0:	f3 0f 1e fa          	endbr64 
+    10b4:	68 08 00 00 00       	push   0x8
+    10b9:	f2 e9 61 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10bf:	90                   	nop
+    10c0:	f3 0f 1e fa          	endbr64 
+    10c4:	68 09 00 00 00       	push   0x9
+    10c9:	f2 e9 51 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10cf:	90                   	nop
+    10d0:	f3 0f 1e fa          	endbr64 
+    10d4:	68 0a 00 00 00       	push   0xa
+    10d9:	f2 e9 41 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10df:	90                   	nop
+    10e0:	f3 0f 1e fa          	endbr64 
+    10e4:	68 0b 00 00 00       	push   0xb
+    10e9:	f2 e9 31 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10ef:	90                   	nop
+    10f0:	f3 0f 1e fa          	endbr64 
+    10f4:	68 0c 00 00 00       	push   0xc
+    10f9:	f2 e9 21 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10ff:	90                   	nop
+    1100:	f3 0f 1e fa          	endbr64 
+    1104:	68 0d 00 00 00       	push   0xd
+    1109:	f2 e9 11 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    110f:	90                   	nop
+    1110:	f3 0f 1e fa          	endbr64 
+    1114:	68 0e 00 00 00       	push   0xe
+    1119:	f2 e9 01 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    111f:	90                   	nop
+    1120:	f3 0f 1e fa          	endbr64 
+    1124:	68 0f 00 00 00       	push   0xf
+    1129:	f2 e9 f1 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    112f:	90                   	nop
+    1130:	f3 0f 1e fa          	endbr64 
+    1134:	68 10 00 00 00       	push   0x10
+    1139:	f2 e9 e1 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    113f:	90                   	nop
+    1140:	f3 0f 1e fa          	endbr64 
+    1144:	68 11 00 00 00       	push   0x11
+    1149:	f2 e9 d1 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    114f:	90                   	nop
+    1150:	f3 0f 1e fa          	endbr64 
+    1154:	68 12 00 00 00       	push   0x12
+    1159:	f2 e9 c1 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    115f:	90                   	nop
+    1160:	f3 0f 1e fa          	endbr64 
+    1164:	68 13 00 00 00       	push   0x13
+    1169:	f2 e9 b1 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    116f:	90                   	nop
+    1170:	f3 0f 1e fa          	endbr64 
+    1174:	68 14 00 00 00       	push   0x14
+    1179:	f2 e9 a1 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    117f:	90                   	nop
+    1180:	f3 0f 1e fa          	endbr64 
+    1184:	68 15 00 00 00       	push   0x15
+    1189:	f2 e9 91 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    118f:	90                   	nop
+    1190:	f3 0f 1e fa          	endbr64 
+    1194:	68 16 00 00 00       	push   0x16
+    1199:	f2 e9 81 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    119f:	90                   	nop
+    11a0:	f3 0f 1e fa          	endbr64 
+    11a4:	68 17 00 00 00       	push   0x17
+    11a9:	f2 e9 71 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    11af:	90                   	nop
+    11b0:	f3 0f 1e fa          	endbr64 
+    11b4:	68 18 00 00 00       	push   0x18
+    11b9:	f2 e9 61 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    11bf:	90                   	nop
+    11c0:	f3 0f 1e fa          	endbr64 
+    11c4:	68 19 00 00 00       	push   0x19
+    11c9:	f2 e9 51 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    11cf:	90                   	nop
+    11d0:	f3 0f 1e fa          	endbr64 
+    11d4:	68 1a 00 00 00       	push   0x1a
+    11d9:	f2 e9 41 fe ff ff    	bnd jmp 1020 <_init+0x20>
+    11df:	90                   	nop
+
+Disassembly of section .plt.got:
+
+00000000000011e0 <__cxa_finalize@plt>:
+    11e0:	f3 0f 1e fa          	endbr64 
+    11e4:	f2 ff 25 0d 4e 00 00 	bnd jmp QWORD PTR [rip+0x4e0d]        # 5ff8 <__cxa_finalize@GLIBC_2.2.5>
+    11eb:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .plt.sec:
+
+00000000000011f0 <recv@plt>:
+    11f0:	f3 0f 1e fa          	endbr64 
+    11f4:	f2 ff 25 05 4d 00 00 	bnd jmp QWORD PTR [rip+0x4d05]        # 5f00 <recv@GLIBC_2.2.5>
+    11fb:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001200 <puts@plt>:
+    1200:	f3 0f 1e fa          	endbr64 
+    1204:	f2 ff 25 fd 4c 00 00 	bnd jmp QWORD PTR [rip+0x4cfd]        # 5f08 <puts@GLIBC_2.2.5>
+    120b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001210 <setsockopt@plt>:
+    1210:	f3 0f 1e fa          	endbr64 
+    1214:	f2 ff 25 f5 4c 00 00 	bnd jmp QWORD PTR [rip+0x4cf5]        # 5f10 <setsockopt@GLIBC_2.2.5>
+    121b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001220 <fcntl@plt>:
+    1220:	f3 0f 1e fa          	endbr64 
+    1224:	f2 ff 25 ed 4c 00 00 	bnd jmp QWORD PTR [rip+0x4ced]        # 5f18 <fcntl@GLIBC_2.2.5>
+    122b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001230 <__stack_chk_fail@plt>:
+    1230:	f3 0f 1e fa          	endbr64 
+    1234:	f2 ff 25 e5 4c 00 00 	bnd jmp QWORD PTR [rip+0x4ce5]        # 5f20 <__stack_chk_fail@GLIBC_2.4>
+    123b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001240 <send@plt>:
+    1240:	f3 0f 1e fa          	endbr64 
+    1244:	f2 ff 25 dd 4c 00 00 	bnd jmp QWORD PTR [rip+0x4cdd]        # 5f28 <send@GLIBC_2.2.5>
+    124b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001250 <printf@plt>:
+    1250:	f3 0f 1e fa          	endbr64 
+    1254:	f2 ff 25 d5 4c 00 00 	bnd jmp QWORD PTR [rip+0x4cd5]        # 5f30 <printf@GLIBC_2.2.5>
+    125b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001260 <gai_strerror@plt>:
+    1260:	f3 0f 1e fa          	endbr64 
+    1264:	f2 ff 25 cd 4c 00 00 	bnd jmp QWORD PTR [rip+0x4ccd]        # 5f38 <gai_strerror@GLIBC_2.2.5>
+    126b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001270 <memset@plt>:
+    1270:	f3 0f 1e fa          	endbr64 
+    1274:	f2 ff 25 c5 4c 00 00 	bnd jmp QWORD PTR [rip+0x4cc5]        # 5f40 <memset@GLIBC_2.2.5>
+    127b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001280 <close@plt>:
+    1280:	f3 0f 1e fa          	endbr64 
+    1284:	f2 ff 25 bd 4c 00 00 	bnd jmp QWORD PTR [rip+0x4cbd]        # 5f48 <close@GLIBC_2.2.5>
+    128b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001290 <epoll_ctl@plt>:
+    1290:	f3 0f 1e fa          	endbr64 
+    1294:	f2 ff 25 b5 4c 00 00 	bnd jmp QWORD PTR [rip+0x4cb5]        # 5f50 <epoll_ctl@GLIBC_2.3.2>
+    129b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000012a0 <calloc@plt>:
+    12a0:	f3 0f 1e fa          	endbr64 
+    12a4:	f2 ff 25 ad 4c 00 00 	bnd jmp QWORD PTR [rip+0x4cad]        # 5f58 <calloc@GLIBC_2.2.5>
+    12ab:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000012b0 <fprintf@plt>:
+    12b0:	f3 0f 1e fa          	endbr64 
+    12b4:	f2 ff 25 a5 4c 00 00 	bnd jmp QWORD PTR [rip+0x4ca5]        # 5f60 <fprintf@GLIBC_2.2.5>
+    12bb:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000012c0 <malloc@plt>:
+    12c0:	f3 0f 1e fa          	endbr64 
+    12c4:	f2 ff 25 9d 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c9d]        # 5f68 <malloc@GLIBC_2.2.5>
+    12cb:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000012d0 <listen@plt>:
+    12d0:	f3 0f 1e fa          	endbr64 
+    12d4:	f2 ff 25 95 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c95]        # 5f70 <listen@GLIBC_2.2.5>
+    12db:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000012e0 <epoll_wait@plt>:
+    12e0:	f3 0f 1e fa          	endbr64 
+    12e4:	f2 ff 25 8d 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c8d]        # 5f78 <epoll_wait@GLIBC_2.3.2>
+    12eb:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000012f0 <bind@plt>:
+    12f0:	f3 0f 1e fa          	endbr64 
+    12f4:	f2 ff 25 85 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c85]        # 5f80 <bind@GLIBC_2.2.5>
+    12fb:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001300 <pthread_create@plt>:
+    1300:	f3 0f 1e fa          	endbr64 
+    1304:	f2 ff 25 7d 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c7d]        # 5f88 <pthread_create@GLIBC_2.34>
+    130b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001310 <perror@plt>:
+    1310:	f3 0f 1e fa          	endbr64 
+    1314:	f2 ff 25 75 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c75]        # 5f90 <perror@GLIBC_2.2.5>
+    131b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001320 <accept@plt>:
+    1320:	f3 0f 1e fa          	endbr64 
+    1324:	f2 ff 25 6d 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c6d]        # 5f98 <accept@GLIBC_2.2.5>
+    132b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001330 <exit@plt>:
+    1330:	f3 0f 1e fa          	endbr64 
+    1334:	f2 ff 25 65 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c65]        # 5fa0 <exit@GLIBC_2.2.5>
+    133b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001340 <fwrite@plt>:
+    1340:	f3 0f 1e fa          	endbr64 
+    1344:	f2 ff 25 5d 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c5d]        # 5fa8 <fwrite@GLIBC_2.2.5>
+    134b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001350 <getaddrinfo@plt>:
+    1350:	f3 0f 1e fa          	endbr64 
+    1354:	f2 ff 25 55 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c55]        # 5fb0 <getaddrinfo@GLIBC_2.2.5>
+    135b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001360 <pthread_join@plt>:
+    1360:	f3 0f 1e fa          	endbr64 
+    1364:	f2 ff 25 4d 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c4d]        # 5fb8 <pthread_join@GLIBC_2.34>
+    136b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001370 <epoll_create1@plt>:
+    1370:	f3 0f 1e fa          	endbr64 
+    1374:	f2 ff 25 45 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c45]        # 5fc0 <epoll_create1@GLIBC_2.9>
+    137b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001380 <freeaddrinfo@plt>:
+    1380:	f3 0f 1e fa          	endbr64 
+    1384:	f2 ff 25 3d 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c3d]        # 5fc8 <freeaddrinfo@GLIBC_2.2.5>
+    138b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001390 <socket@plt>:
+    1390:	f3 0f 1e fa          	endbr64 
+    1394:	f2 ff 25 35 4c 00 00 	bnd jmp QWORD PTR [rip+0x4c35]        # 5fd0 <socket@GLIBC_2.2.5>
+    139b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .text:
+
+00000000000013a0 <_start>:
+    13a0:	f3 0f 1e fa          	endbr64 
+    13a4:	31 ed                	xor    ebp,ebp
+    13a6:	49 89 d1             	mov    r9,rdx
+    13a9:	5e                   	pop    rsi
+    13aa:	48 89 e2             	mov    rdx,rsp
+    13ad:	48 83 e4 f0          	and    rsp,0xfffffffffffffff0
+    13b1:	50                   	push   rax
+    13b2:	54                   	push   rsp
+    13b3:	45 31 c0             	xor    r8d,r8d
+    13b6:	31 c9                	xor    ecx,ecx
+    13b8:	48 8d 3d 20 1c 00 00 	lea    rdi,[rip+0x1c20]        # 2fdf <main>
+    13bf:	ff 15 13 4c 00 00    	call   QWORD PTR [rip+0x4c13]        # 5fd8 <__libc_start_main@GLIBC_2.34>
+    13c5:	f4                   	hlt    
+    13c6:	66 2e 0f 1f 84 00 00 00 00 00 	cs nop WORD PTR [rax+rax*1+0x0]
+
+00000000000013d0 <deregister_tm_clones>:
+    13d0:	48 8d 3d 39 4c 00 00 	lea    rdi,[rip+0x4c39]        # 6010 <__TMC_END__>
+    13d7:	48 8d 05 32 4c 00 00 	lea    rax,[rip+0x4c32]        # 6010 <__TMC_END__>
+    13de:	48 39 f8             	cmp    rax,rdi
+    13e1:	74 15                	je     13f8 <deregister_tm_clones+0x28>
+    13e3:	48 8b 05 f6 4b 00 00 	mov    rax,QWORD PTR [rip+0x4bf6]        # 5fe0 <_ITM_deregisterTMCloneTable@Base>
+    13ea:	48 85 c0             	test   rax,rax
+    13ed:	74 09                	je     13f8 <deregister_tm_clones+0x28>
+    13ef:	ff e0                	jmp    rax
+    13f1:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+    13f8:	c3                   	ret    
+    13f9:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+0000000000001400 <register_tm_clones>:
+    1400:	48 8d 3d 09 4c 00 00 	lea    rdi,[rip+0x4c09]        # 6010 <__TMC_END__>
+    1407:	48 8d 35 02 4c 00 00 	lea    rsi,[rip+0x4c02]        # 6010 <__TMC_END__>
+    140e:	48 29 fe             	sub    rsi,rdi
+    1411:	48 89 f0             	mov    rax,rsi
+    1414:	48 c1 ee 3f          	shr    rsi,0x3f
+    1418:	48 c1 f8 03          	sar    rax,0x3
+    141c:	48 01 c6             	add    rsi,rax
+    141f:	48 d1 fe             	sar    rsi,1
+    1422:	74 14                	je     1438 <register_tm_clones+0x38>
+    1424:	48 8b 05 c5 4b 00 00 	mov    rax,QWORD PTR [rip+0x4bc5]        # 5ff0 <_ITM_registerTMCloneTable@Base>
+    142b:	48 85 c0             	test   rax,rax
+    142e:	74 08                	je     1438 <register_tm_clones+0x38>
+    1430:	ff e0                	jmp    rax
+    1432:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+    1438:	c3                   	ret    
+    1439:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+0000000000001440 <__do_global_dtors_aux>:
+    1440:	f3 0f 1e fa          	endbr64 
+    1444:	80 3d dd 4b 00 00 00 	cmp    BYTE PTR [rip+0x4bdd],0x0        # 6028 <completed.0>
+    144b:	75 2b                	jne    1478 <__do_global_dtors_aux+0x38>
+    144d:	55                   	push   rbp
+    144e:	48 83 3d a2 4b 00 00 00 	cmp    QWORD PTR [rip+0x4ba2],0x0        # 5ff8 <__cxa_finalize@GLIBC_2.2.5>
+    1456:	48 89 e5             	mov    rbp,rsp
+    1459:	74 0c                	je     1467 <__do_global_dtors_aux+0x27>
+    145b:	48 8b 3d a6 4b 00 00 	mov    rdi,QWORD PTR [rip+0x4ba6]        # 6008 <__dso_handle>
+    1462:	e8 79 fd ff ff       	call   11e0 <__cxa_finalize@plt>
+    1467:	e8 64 ff ff ff       	call   13d0 <deregister_tm_clones>
+    146c:	c6 05 b5 4b 00 00 01 	mov    BYTE PTR [rip+0x4bb5],0x1        # 6028 <completed.0>
+    1473:	5d                   	pop    rbp
+    1474:	c3                   	ret    
+    1475:	0f 1f 00             	nop    DWORD PTR [rax]
+    1478:	c3                   	ret    
+    1479:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+0000000000001480 <frame_dummy>:
+    1480:	f3 0f 1e fa          	endbr64 
+    1484:	e9 77 ff ff ff       	jmp    1400 <register_tm_clones>
+
+0000000000001489 <push_rb_client>:
+	int thread_num;
+} client_t;
+
+void
+	push_rb_client(struct ringbuffer* rb, struct client_t *client_t, struct io_operation *ptr)
+	{
+    1489:	f3 0f 1e fa          	endbr64 
+    148d:	55                   	push   rbp
+    148e:	48 89 e5             	mov    rbp,rsp
+    1491:	48 83 ec 40          	sub    rsp,0x40
+    1495:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    1499:	48 89 75 d0          	mov    QWORD PTR [rbp-0x30],rsi
+    149d:	48 89 55 c8          	mov    QWORD PTR [rbp-0x38],rdx
+		struct client_t *tp = client_t;
+    14a1:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    14a5:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+		 * after the second assignment with head shift.
+		 *
+		 * Loads and stores are not reordered with locked instructions,
+		 * se we don't need a memory barrier here.
+		 */
+		tp->head = rb->head;
+    14a9:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    14ad:	8b 50 08             	mov    edx,DWORD PTR [rax+0x8]
+    14b0:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    14b4:	89 90 2c 01 00 00    	mov    DWORD PTR [rax+0x12c],edx
+    
+		tp->head = __atomic_fetch_add(&rb->head, 1, __ATOMIC_SEQ_CST);
+    14ba:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    14be:	48 83 c0 08          	add    rax,0x8
+    14c2:	ba 01 00 00 00       	mov    edx,0x1
+    14c7:	f0 0f c1 10          	lock xadd DWORD PTR [rax],edx
+    14cb:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    14cf:	89 90 2c 01 00 00    	mov    DWORD PTR [rax+0x12c],edx
+    tp->head = tp->head % client_t->size;
+    14d5:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    14d9:	8b 80 2c 01 00 00    	mov    eax,DWORD PTR [rax+0x12c]
+    14df:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+    14e3:	8b 8a 58 01 00 00    	mov    ecx,DWORD PTR [rdx+0x158]
+    14e9:	99                   	cdq    
+    14ea:	f7 f9                	idiv   ecx
+    14ec:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    14f0:	89 90 2c 01 00 00    	mov    DWORD PTR [rax+0x12c],edx
+    rb->head = rb->head % client_t->size;
+    14f6:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    14fa:	8b 40 08             	mov    eax,DWORD PTR [rax+0x8]
+    14fd:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+    1501:	8b 8a 58 01 00 00    	mov    ecx,DWORD PTR [rdx+0x158]
+    1507:	99                   	cdq    
+    1508:	f7 f9                	idiv   ecx
+    150a:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    150e:	89 50 08             	mov    DWORD PTR [rax+0x8],edx
+
+		/*
+		 * We do not know when a consumer uses the pop()'ed pointer,
+		 * se we can not overwrite it and have to wait the lowest tail.
+		 */
+		while (__builtin_expect(tp->head >= (rb->last_tail + rb->size), 0))
+    1511:	e9 91 00 00 00       	jmp    15a7 <push_rb_client+0x11e>
+		{
+		  printf("Blocking during push..\n");
+    1516:	48 8d 05 eb 2a 00 00 	lea    rax,[rip+0x2aeb]        # 4008 <_IO_stdin_used+0x8>
+    151d:	48 89 c7             	mov    rdi,rax
+    1520:	e8 db fc ff ff       	call   1200 <puts@plt>
+      
+			int min = rb->tail;
+    1525:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1529:	8b 40 0c             	mov    eax,DWORD PTR [rax+0xc]
+    152c:	89 45 e8             	mov    DWORD PTR [rbp-0x18],eax
+      // printf("%d min %d tail %d last tail\n", min, tp->head, rb->last_tail);
+
+			// Update the last_tail_.
+			for (size_t i = 0; i < client_t->num_client_ts; ++i) {
+    152f:	48 c7 45 f0 00 00 00 00 	mov    QWORD PTR [rbp-0x10],0x0
+    1537:	eb 34                	jmp    156d <push_rb_client+0xe4>
+				int tmp_t = client_t->client_ts[i].tail;
+    1539:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    153d:	48 8b 90 60 01 00 00 	mov    rdx,QWORD PTR [rax+0x160]
+    1544:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1548:	48 69 c0 70 01 00 00 	imul   rax,rax,0x170
+    154f:	48 01 d0             	add    rax,rdx
+    1552:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1558:	89 45 ec             	mov    DWORD PTR [rbp-0x14],eax
+
+				// Force compiler to use tmp_h exactly once.
+				asm volatile("" ::: "memory");
+
+				if (tmp_t < min) {
+    155b:	8b 45 ec             	mov    eax,DWORD PTR [rbp-0x14]
+    155e:	3b 45 e8             	cmp    eax,DWORD PTR [rbp-0x18]
+    1561:	7d 06                	jge    1569 <push_rb_client+0xe0>
+					min = tmp_t;
+    1563:	8b 45 ec             	mov    eax,DWORD PTR [rbp-0x14]
+    1566:	89 45 e8             	mov    DWORD PTR [rbp-0x18],eax
+			for (size_t i = 0; i < client_t->num_client_ts; ++i) {
+    1569:	48 ff 45 f0          	inc    QWORD PTR [rbp-0x10]
+    156d:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    1571:	8b 80 38 01 00 00    	mov    eax,DWORD PTR [rax+0x138]
+    1577:	48 98                	cdqe   
+    1579:	48 39 45 f0          	cmp    QWORD PTR [rbp-0x10],rax
+    157d:	72 ba                	jb     1539 <push_rb_client+0xb0>
+        }
+			}
+			rb->last_tail = min;
+    157f:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1583:	8b 55 e8             	mov    edx,DWORD PTR [rbp-0x18]
+    1586:	89 50 04             	mov    DWORD PTR [rax+0x4],edx
+
+			if (tp->head < (rb->last_tail + rb->size)) {
+    1589:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    158d:	8b 90 2c 01 00 00    	mov    edx,DWORD PTR [rax+0x12c]
+    1593:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1597:	8b 48 04             	mov    ecx,DWORD PTR [rax+0x4]
+    159a:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    159e:	8b 40 14             	mov    eax,DWORD PTR [rax+0x14]
+    15a1:	01 c8                	add    eax,ecx
+    15a3:	39 c2                	cmp    edx,eax
+    15a5:	7c 2d                	jl     15d4 <push_rb_client+0x14b>
+		while (__builtin_expect(tp->head >= (rb->last_tail + rb->size), 0))
+    15a7:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    15ab:	8b 90 2c 01 00 00    	mov    edx,DWORD PTR [rax+0x12c]
+    15b1:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    15b5:	8b 48 04             	mov    ecx,DWORD PTR [rax+0x4]
+    15b8:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    15bc:	8b 40 14             	mov    eax,DWORD PTR [rax+0x14]
+    15bf:	01 c8                	add    eax,ecx
+    15c1:	39 c2                	cmp    edx,eax
+    15c3:	0f 9d c0             	setge  al
+    15c6:	0f b6 c0             	movzx  eax,al
+    15c9:	48 85 c0             	test   rax,rax
+    15cc:	0f 85 44 ff ff ff    	jne    1516 <push_rb_client+0x8d>
+    15d2:	eb 01                	jmp    15d5 <push_rb_client+0x14c>
+        
+				break;
+    15d4:	90                   	nop
+			
+		}
+    // free(&tp->operations[tp->head]);
+    // printf("Pushing operation\n");
+
+    rb->operations[tp->head] = ptr;
+    15d5:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    15d9:	48 8b 50 18          	mov    rdx,QWORD PTR [rax+0x18]
+    15dd:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    15e1:	8b 80 2c 01 00 00    	mov    eax,DWORD PTR [rax+0x12c]
+    15e7:	48 98                	cdqe   
+    15e9:	48 c1 e0 03          	shl    rax,0x3
+    15ed:	48 01 d0             	add    rax,rdx
+    15f0:	48 8b 55 c8          	mov    rdx,QWORD PTR [rbp-0x38]
+    15f4:	48 89 10             	mov    QWORD PTR [rax],rdx
+    // printf("Successfully pushed");
+		// Allow consumers eat the item.
+		tp->head = INT_MAX;
+    15f7:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    15fb:	c7 80 2c 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x12c],0x7fffffff
+	}
+    1605:	90                   	nop
+    1606:	c9                   	leave  
+    1607:	c3                   	ret    
+
+0000000000001608 <push_rb>:
+
+void
+	push_rb(struct ringbuffer* rb, struct worker_t *worker_t, struct io_operation *ptr)
+	{
+    1608:	f3 0f 1e fa          	endbr64 
+    160c:	55                   	push   rbp
+    160d:	48 89 e5             	mov    rbp,rsp
+    1610:	48 83 ec 40          	sub    rsp,0x40
+    1614:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    1618:	48 89 75 d0          	mov    QWORD PTR [rbp-0x30],rsi
+    161c:	48 89 55 c8          	mov    QWORD PTR [rbp-0x38],rdx
+		struct worker_t *tp = worker_t;
+    1620:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    1624:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+		 * after the second assignment with head shift.
+		 *
+		 * Loads and stores are not reordered with locked instructions,
+		 * se we don't need a memory barrier here.
+		 */
+		tp->head = rb->head;
+    1628:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    162c:	8b 50 08             	mov    edx,DWORD PTR [rax+0x8]
+    162f:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1633:	89 90 b4 01 00 00    	mov    DWORD PTR [rax+0x1b4],edx
+    
+		tp->head = __atomic_fetch_add(&rb->head, 1, __ATOMIC_SEQ_CST);
+    1639:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    163d:	48 83 c0 08          	add    rax,0x8
+    1641:	ba 01 00 00 00       	mov    edx,0x1
+    1646:	f0 0f c1 10          	lock xadd DWORD PTR [rax],edx
+    164a:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    164e:	89 90 b4 01 00 00    	mov    DWORD PTR [rax+0x1b4],edx
+    tp->head = tp->head % worker_t->size;
+    1654:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1658:	8b 80 b4 01 00 00    	mov    eax,DWORD PTR [rax+0x1b4]
+    165e:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+    1662:	8b 8a b8 01 00 00    	mov    ecx,DWORD PTR [rdx+0x1b8]
+    1668:	99                   	cdq    
+    1669:	f7 f9                	idiv   ecx
+    166b:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    166f:	89 90 b4 01 00 00    	mov    DWORD PTR [rax+0x1b4],edx
+    rb->head = rb->head % worker_t->size;
+    1675:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1679:	8b 40 08             	mov    eax,DWORD PTR [rax+0x8]
+    167c:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+    1680:	8b 8a b8 01 00 00    	mov    ecx,DWORD PTR [rdx+0x1b8]
+    1686:	99                   	cdq    
+    1687:	f7 f9                	idiv   ecx
+    1689:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    168d:	89 50 08             	mov    DWORD PTR [rax+0x8],edx
+
+		/*
+		 * We do not know when a consumer uses the pop()'ed pointer,
+		 * se we can not overwrite it and have to wait the lowest tail.
+		 */
+		while (__builtin_expect(tp->head >= (rb->last_tail + rb->size), 0))
+    1690:	e9 91 00 00 00       	jmp    1726 <push_rb+0x11e>
+		{
+		  printf("Blocking during push..\n");
+    1695:	48 8d 05 6c 29 00 00 	lea    rax,[rip+0x296c]        # 4008 <_IO_stdin_used+0x8>
+    169c:	48 89 c7             	mov    rdi,rax
+    169f:	e8 5c fb ff ff       	call   1200 <puts@plt>
+      
+			int min = rb->tail;
+    16a4:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    16a8:	8b 40 0c             	mov    eax,DWORD PTR [rax+0xc]
+    16ab:	89 45 e8             	mov    DWORD PTR [rbp-0x18],eax
+      // printf("%d min %d tail %d last tail\n", min, tp->head, rb->last_tail);
+
+			// Update the last_tail_.
+			for (size_t i = 0; i < worker_t->num_worker_ts; ++i) {
+    16ae:	48 c7 45 f0 00 00 00 00 	mov    QWORD PTR [rbp-0x10],0x0
+    16b6:	eb 34                	jmp    16ec <push_rb+0xe4>
+				int tmp_t = worker_t->worker_ts[i].tail;
+    16b8:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    16bc:	48 8b 90 c0 01 00 00 	mov    rdx,QWORD PTR [rax+0x1c0]
+    16c3:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    16c7:	48 69 c0 c8 01 00 00 	imul   rax,rax,0x1c8
+    16ce:	48 01 d0             	add    rax,rdx
+    16d1:	8b 80 b0 01 00 00    	mov    eax,DWORD PTR [rax+0x1b0]
+    16d7:	89 45 ec             	mov    DWORD PTR [rbp-0x14],eax
+
+				// Force compiler to use tmp_h exactly once.
+				asm volatile("" ::: "memory");
+
+				if (tmp_t < min) {
+    16da:	8b 45 ec             	mov    eax,DWORD PTR [rbp-0x14]
+    16dd:	3b 45 e8             	cmp    eax,DWORD PTR [rbp-0x18]
+    16e0:	7d 06                	jge    16e8 <push_rb+0xe0>
+					min = tmp_t;
+    16e2:	8b 45 ec             	mov    eax,DWORD PTR [rbp-0x14]
+    16e5:	89 45 e8             	mov    DWORD PTR [rbp-0x18],eax
+			for (size_t i = 0; i < worker_t->num_worker_ts; ++i) {
+    16e8:	48 ff 45 f0          	inc    QWORD PTR [rbp-0x10]
+    16ec:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    16f0:	8b 80 bc 01 00 00    	mov    eax,DWORD PTR [rax+0x1bc]
+    16f6:	48 98                	cdqe   
+    16f8:	48 39 45 f0          	cmp    QWORD PTR [rbp-0x10],rax
+    16fc:	72 ba                	jb     16b8 <push_rb+0xb0>
+        }
+			}
+			rb->last_tail = min;
+    16fe:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1702:	8b 55 e8             	mov    edx,DWORD PTR [rbp-0x18]
+    1705:	89 50 04             	mov    DWORD PTR [rax+0x4],edx
+
+			if (tp->head < (rb->last_tail + rb->size)) {
+    1708:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    170c:	8b 90 b4 01 00 00    	mov    edx,DWORD PTR [rax+0x1b4]
+    1712:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1716:	8b 48 04             	mov    ecx,DWORD PTR [rax+0x4]
+    1719:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    171d:	8b 40 14             	mov    eax,DWORD PTR [rax+0x14]
+    1720:	01 c8                	add    eax,ecx
+    1722:	39 c2                	cmp    edx,eax
+    1724:	7c 2d                	jl     1753 <push_rb+0x14b>
+		while (__builtin_expect(tp->head >= (rb->last_tail + rb->size), 0))
+    1726:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    172a:	8b 90 b4 01 00 00    	mov    edx,DWORD PTR [rax+0x1b4]
+    1730:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1734:	8b 48 04             	mov    ecx,DWORD PTR [rax+0x4]
+    1737:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    173b:	8b 40 14             	mov    eax,DWORD PTR [rax+0x14]
+    173e:	01 c8                	add    eax,ecx
+    1740:	39 c2                	cmp    edx,eax
+    1742:	0f 9d c0             	setge  al
+    1745:	0f b6 c0             	movzx  eax,al
+    1748:	48 85 c0             	test   rax,rax
+    174b:	0f 85 44 ff ff ff    	jne    1695 <push_rb+0x8d>
+    1751:	eb 01                	jmp    1754 <push_rb+0x14c>
+        
+				break;
+    1753:	90                   	nop
+			
+		}
+    // free(&tp->operations[tp->head]);
+    // printf("Pushing operation\n");
+
+    rb->operations[tp->head] = ptr;
+    1754:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1758:	48 8b 50 18          	mov    rdx,QWORD PTR [rax+0x18]
+    175c:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1760:	8b 80 b4 01 00 00    	mov    eax,DWORD PTR [rax+0x1b4]
+    1766:	48 98                	cdqe   
+    1768:	48 c1 e0 03          	shl    rax,0x3
+    176c:	48 01 d0             	add    rax,rdx
+    176f:	48 8b 55 c8          	mov    rdx,QWORD PTR [rbp-0x38]
+    1773:	48 89 10             	mov    QWORD PTR [rax],rdx
+    // printf("Successfully pushed");
+		// Allow consumers eat the item.
+		tp->head = INT_MAX;
+    1776:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    177a:	c7 80 b4 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x1b4],0x7fffffff
+	}
+    1784:	90                   	nop
+    1785:	c9                   	leave  
+    1786:	c3                   	ret    
+
+0000000000001787 <push_client>:
+
+void
+	push_client(struct client_t *client_t, struct io_operation *ptr)
+	{
+    1787:	f3 0f 1e fa          	endbr64 
+    178b:	55                   	push   rbp
+    178c:	48 89 e5             	mov    rbp,rsp
+    178f:	48 83 ec 30          	sub    rsp,0x30
+    1793:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    1797:	48 89 75 d0          	mov    QWORD PTR [rbp-0x30],rsi
+		printf("Pushing item to ringbuffer\n");
+    179b:	48 8d 05 7d 28 00 00 	lea    rax,[rip+0x287d]        # 401f <_IO_stdin_used+0x1f>
+    17a2:	48 89 c7             	mov    rdi,rax
+    17a5:	e8 56 fa ff ff       	call   1200 <puts@plt>
+		struct client_t *tp = client_t;
+    17aa:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    17ae:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+    struct ringbuffer *rb = tp->ringbuffer;
+    17b2:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    17b6:	48 8b 80 a8 00 00 00 	mov    rax,QWORD PTR [rax+0xa8]
+    17bd:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+		 * after the second assignment with head shift.
+		 *
+		 * Loads and stores are not reordered with locked instructions,
+		 * se we don't need a memory barrier here.
+		 */
+		tp->head = rb->head;
+    17c1:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    17c5:	8b 50 08             	mov    edx,DWORD PTR [rax+0x8]
+    17c8:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    17cc:	89 90 2c 01 00 00    	mov    DWORD PTR [rax+0x12c],edx
+    
+		tp->head = __atomic_fetch_add(&rb->head, 1, __ATOMIC_SEQ_CST);
+    17d2:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    17d6:	48 83 c0 08          	add    rax,0x8
+    17da:	ba 01 00 00 00       	mov    edx,0x1
+    17df:	f0 0f c1 10          	lock xadd DWORD PTR [rax],edx
+    17e3:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    17e7:	89 90 2c 01 00 00    	mov    DWORD PTR [rax+0x12c],edx
+    tp->head = tp->head % client_t->size;
+    17ed:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    17f1:	8b 80 2c 01 00 00    	mov    eax,DWORD PTR [rax+0x12c]
+    17f7:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+    17fb:	8b 8a 58 01 00 00    	mov    ecx,DWORD PTR [rdx+0x158]
+    1801:	99                   	cdq    
+    1802:	f7 f9                	idiv   ecx
+    1804:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1808:	89 90 2c 01 00 00    	mov    DWORD PTR [rax+0x12c],edx
+    rb->head = rb->head % client_t->size;
+    180e:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1812:	8b 40 08             	mov    eax,DWORD PTR [rax+0x8]
+    1815:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+    1819:	8b 8a 58 01 00 00    	mov    ecx,DWORD PTR [rdx+0x158]
+    181f:	99                   	cdq    
+    1820:	f7 f9                	idiv   ecx
+    1822:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1826:	89 50 08             	mov    DWORD PTR [rax+0x8],edx
+
+		/*
+		 * We do not know when a consumer uses the pop()'ed pointer,
+		 * se we can not overwrite it and have to wait the lowest tail.
+		 */
+		while (__builtin_expect(tp->head >= (rb->last_tail + rb->size), 0))
+    1829:	e9 91 00 00 00       	jmp    18bf <push_client+0x138>
+		{
+		  printf("Blocking during push..\n");
+    182e:	48 8d 05 d3 27 00 00 	lea    rax,[rip+0x27d3]        # 4008 <_IO_stdin_used+0x8>
+    1835:	48 89 c7             	mov    rdi,rax
+    1838:	e8 c3 f9 ff ff       	call   1200 <puts@plt>
+      
+			int min = rb->tail;
+    183d:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1841:	8b 40 0c             	mov    eax,DWORD PTR [rax+0xc]
+    1844:	89 45 e0             	mov    DWORD PTR [rbp-0x20],eax
+      // printf("%d min %d tail %d last tail\n", min, tp->head, rb->last_tail);
+
+			// Update the last_tail_.
+			for (size_t i = 0; i < client_t->num_client_ts; ++i) {
+    1847:	48 c7 45 e8 00 00 00 00 	mov    QWORD PTR [rbp-0x18],0x0
+    184f:	eb 34                	jmp    1885 <push_client+0xfe>
+				int tmp_t = client_t->client_ts[i].tail;
+    1851:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1855:	48 8b 90 60 01 00 00 	mov    rdx,QWORD PTR [rax+0x160]
+    185c:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1860:	48 69 c0 70 01 00 00 	imul   rax,rax,0x170
+    1867:	48 01 d0             	add    rax,rdx
+    186a:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1870:	89 45 e4             	mov    DWORD PTR [rbp-0x1c],eax
+
+				// Force compiler to use tmp_h exactly once.
+				asm volatile("" ::: "memory");
+
+				if (tmp_t < min) {
+    1873:	8b 45 e4             	mov    eax,DWORD PTR [rbp-0x1c]
+    1876:	3b 45 e0             	cmp    eax,DWORD PTR [rbp-0x20]
+    1879:	7d 06                	jge    1881 <push_client+0xfa>
+					min = tmp_t;
+    187b:	8b 45 e4             	mov    eax,DWORD PTR [rbp-0x1c]
+    187e:	89 45 e0             	mov    DWORD PTR [rbp-0x20],eax
+			for (size_t i = 0; i < client_t->num_client_ts; ++i) {
+    1881:	48 ff 45 e8          	inc    QWORD PTR [rbp-0x18]
+    1885:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1889:	8b 80 38 01 00 00    	mov    eax,DWORD PTR [rax+0x138]
+    188f:	48 98                	cdqe   
+    1891:	48 39 45 e8          	cmp    QWORD PTR [rbp-0x18],rax
+    1895:	72 ba                	jb     1851 <push_client+0xca>
+        }
+			}
+			rb->last_tail = min;
+    1897:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    189b:	8b 55 e0             	mov    edx,DWORD PTR [rbp-0x20]
+    189e:	89 50 04             	mov    DWORD PTR [rax+0x4],edx
+
+			if (tp->head < (rb->last_tail + rb->size)) {
+    18a1:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    18a5:	8b 90 2c 01 00 00    	mov    edx,DWORD PTR [rax+0x12c]
+    18ab:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    18af:	8b 48 04             	mov    ecx,DWORD PTR [rax+0x4]
+    18b2:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    18b6:	8b 40 14             	mov    eax,DWORD PTR [rax+0x14]
+    18b9:	01 c8                	add    eax,ecx
+    18bb:	39 c2                	cmp    edx,eax
+    18bd:	7c 2d                	jl     18ec <push_client+0x165>
+		while (__builtin_expect(tp->head >= (rb->last_tail + rb->size), 0))
+    18bf:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    18c3:	8b 90 2c 01 00 00    	mov    edx,DWORD PTR [rax+0x12c]
+    18c9:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    18cd:	8b 48 04             	mov    ecx,DWORD PTR [rax+0x4]
+    18d0:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    18d4:	8b 40 14             	mov    eax,DWORD PTR [rax+0x14]
+    18d7:	01 c8                	add    eax,ecx
+    18d9:	39 c2                	cmp    edx,eax
+    18db:	0f 9d c0             	setge  al
+    18de:	0f b6 c0             	movzx  eax,al
+    18e1:	48 85 c0             	test   rax,rax
+    18e4:	0f 85 44 ff ff ff    	jne    182e <push_client+0xa7>
+    18ea:	eb 01                	jmp    18ed <push_client+0x166>
+        
+				break;
+    18ec:	90                   	nop
+			
+		}
+    // free(&tp->operations[tp->head]);
+    // printf("Pushing operation\n");
+
+    rb->operations[tp->head] = ptr;
+    18ed:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    18f1:	48 8b 50 18          	mov    rdx,QWORD PTR [rax+0x18]
+    18f5:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    18f9:	8b 80 2c 01 00 00    	mov    eax,DWORD PTR [rax+0x12c]
+    18ff:	48 98                	cdqe   
+    1901:	48 c1 e0 03          	shl    rax,0x3
+    1905:	48 01 d0             	add    rax,rdx
+    1908:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+    190c:	48 89 10             	mov    QWORD PTR [rax],rdx
+    // printf("Successfully pushed");
+		// Allow consumers eat the item.
+		tp->head = INT_MAX;
+    190f:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1913:	c7 80 2c 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x12c],0x7fffffff
+	}
+    191d:	90                   	nop
+    191e:	c9                   	leave  
+    191f:	c3                   	ret    
+
+0000000000001920 <push>:
+
+void
+	push(struct worker_t *worker_t, struct io_operation *ptr)
+	{
+    1920:	f3 0f 1e fa          	endbr64 
+    1924:	55                   	push   rbp
+    1925:	48 89 e5             	mov    rbp,rsp
+    1928:	48 83 ec 30          	sub    rsp,0x30
+    192c:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    1930:	48 89 75 d0          	mov    QWORD PTR [rbp-0x30],rsi
+		printf("Pushing item to ringbuffer\n");
+    1934:	48 8d 05 e4 26 00 00 	lea    rax,[rip+0x26e4]        # 401f <_IO_stdin_used+0x1f>
+    193b:	48 89 c7             	mov    rdi,rax
+    193e:	e8 bd f8 ff ff       	call   1200 <puts@plt>
+		struct worker_t *tp = worker_t;
+    1943:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1947:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+    struct ringbuffer *rb = tp->ringbuffer;
+    194b:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    194f:	48 8b 80 a8 01 00 00 	mov    rax,QWORD PTR [rax+0x1a8]
+    1956:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+		 * after the second assignment with head shift.
+		 *
+		 * Loads and stores are not reordered with locked instructions,
+		 * se we don't need a memory barrier here.
+		 */
+		tp->head = rb->head;
+    195a:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    195e:	8b 50 08             	mov    edx,DWORD PTR [rax+0x8]
+    1961:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1965:	89 90 b4 01 00 00    	mov    DWORD PTR [rax+0x1b4],edx
+    
+		tp->head = __atomic_fetch_add(&rb->head, 1, __ATOMIC_SEQ_CST);
+    196b:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    196f:	48 83 c0 08          	add    rax,0x8
+    1973:	ba 01 00 00 00       	mov    edx,0x1
+    1978:	f0 0f c1 10          	lock xadd DWORD PTR [rax],edx
+    197c:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1980:	89 90 b4 01 00 00    	mov    DWORD PTR [rax+0x1b4],edx
+    tp->head = tp->head % worker_t->size;
+    1986:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    198a:	8b 80 b4 01 00 00    	mov    eax,DWORD PTR [rax+0x1b4]
+    1990:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+    1994:	8b 8a b8 01 00 00    	mov    ecx,DWORD PTR [rdx+0x1b8]
+    199a:	99                   	cdq    
+    199b:	f7 f9                	idiv   ecx
+    199d:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    19a1:	89 90 b4 01 00 00    	mov    DWORD PTR [rax+0x1b4],edx
+    rb->head = rb->head % worker_t->size;
+    19a7:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    19ab:	8b 40 08             	mov    eax,DWORD PTR [rax+0x8]
+    19ae:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+    19b2:	8b 8a b8 01 00 00    	mov    ecx,DWORD PTR [rdx+0x1b8]
+    19b8:	99                   	cdq    
+    19b9:	f7 f9                	idiv   ecx
+    19bb:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    19bf:	89 50 08             	mov    DWORD PTR [rax+0x8],edx
+
+		/*
+		 * We do not know when a consumer uses the pop()'ed pointer,
+		 * se we can not overwrite it and have to wait the lowest tail.
+		 */
+		while (__builtin_expect(tp->head >= (rb->last_tail + rb->size), 0))
+    19c2:	e9 91 00 00 00       	jmp    1a58 <push+0x138>
+		{
+		  printf("Blocking during push..\n");
+    19c7:	48 8d 05 3a 26 00 00 	lea    rax,[rip+0x263a]        # 4008 <_IO_stdin_used+0x8>
+    19ce:	48 89 c7             	mov    rdi,rax
+    19d1:	e8 2a f8 ff ff       	call   1200 <puts@plt>
+      
+			int min = rb->tail;
+    19d6:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    19da:	8b 40 0c             	mov    eax,DWORD PTR [rax+0xc]
+    19dd:	89 45 e0             	mov    DWORD PTR [rbp-0x20],eax
+      // printf("%d min %d tail %d last tail\n", min, tp->head, rb->last_tail);
+
+			// Update the last_tail_.
+			for (size_t i = 0; i < worker_t->num_worker_ts; ++i) {
+    19e0:	48 c7 45 e8 00 00 00 00 	mov    QWORD PTR [rbp-0x18],0x0
+    19e8:	eb 34                	jmp    1a1e <push+0xfe>
+				int tmp_t = worker_t->worker_ts[i].tail;
+    19ea:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    19ee:	48 8b 90 c0 01 00 00 	mov    rdx,QWORD PTR [rax+0x1c0]
+    19f5:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    19f9:	48 69 c0 c8 01 00 00 	imul   rax,rax,0x1c8
+    1a00:	48 01 d0             	add    rax,rdx
+    1a03:	8b 80 b0 01 00 00    	mov    eax,DWORD PTR [rax+0x1b0]
+    1a09:	89 45 e4             	mov    DWORD PTR [rbp-0x1c],eax
+
+				// Force compiler to use tmp_h exactly once.
+				asm volatile("" ::: "memory");
+
+				if (tmp_t < min) {
+    1a0c:	8b 45 e4             	mov    eax,DWORD PTR [rbp-0x1c]
+    1a0f:	3b 45 e0             	cmp    eax,DWORD PTR [rbp-0x20]
+    1a12:	7d 06                	jge    1a1a <push+0xfa>
+					min = tmp_t;
+    1a14:	8b 45 e4             	mov    eax,DWORD PTR [rbp-0x1c]
+    1a17:	89 45 e0             	mov    DWORD PTR [rbp-0x20],eax
+			for (size_t i = 0; i < worker_t->num_worker_ts; ++i) {
+    1a1a:	48 ff 45 e8          	inc    QWORD PTR [rbp-0x18]
+    1a1e:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1a22:	8b 80 bc 01 00 00    	mov    eax,DWORD PTR [rax+0x1bc]
+    1a28:	48 98                	cdqe   
+    1a2a:	48 39 45 e8          	cmp    QWORD PTR [rbp-0x18],rax
+    1a2e:	72 ba                	jb     19ea <push+0xca>
+        }
+			}
+			rb->last_tail = min;
+    1a30:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a34:	8b 55 e0             	mov    edx,DWORD PTR [rbp-0x20]
+    1a37:	89 50 04             	mov    DWORD PTR [rax+0x4],edx
+
+			if (tp->head < (rb->last_tail + rb->size)) {
+    1a3a:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1a3e:	8b 90 b4 01 00 00    	mov    edx,DWORD PTR [rax+0x1b4]
+    1a44:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a48:	8b 48 04             	mov    ecx,DWORD PTR [rax+0x4]
+    1a4b:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a4f:	8b 40 14             	mov    eax,DWORD PTR [rax+0x14]
+    1a52:	01 c8                	add    eax,ecx
+    1a54:	39 c2                	cmp    edx,eax
+    1a56:	7c 2d                	jl     1a85 <push+0x165>
+		while (__builtin_expect(tp->head >= (rb->last_tail + rb->size), 0))
+    1a58:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1a5c:	8b 90 b4 01 00 00    	mov    edx,DWORD PTR [rax+0x1b4]
+    1a62:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a66:	8b 48 04             	mov    ecx,DWORD PTR [rax+0x4]
+    1a69:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a6d:	8b 40 14             	mov    eax,DWORD PTR [rax+0x14]
+    1a70:	01 c8                	add    eax,ecx
+    1a72:	39 c2                	cmp    edx,eax
+    1a74:	0f 9d c0             	setge  al
+    1a77:	0f b6 c0             	movzx  eax,al
+    1a7a:	48 85 c0             	test   rax,rax
+    1a7d:	0f 85 44 ff ff ff    	jne    19c7 <push+0xa7>
+    1a83:	eb 01                	jmp    1a86 <push+0x166>
+        
+				break;
+    1a85:	90                   	nop
+			
+		}
+    // free(&tp->operations[tp->head]);
+    // printf("Pushing operation\n");
+
+    rb->operations[tp->head] = ptr;
+    1a86:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a8a:	48 8b 50 18          	mov    rdx,QWORD PTR [rax+0x18]
+    1a8e:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1a92:	8b 80 b4 01 00 00    	mov    eax,DWORD PTR [rax+0x1b4]
+    1a98:	48 98                	cdqe   
+    1a9a:	48 c1 e0 03          	shl    rax,0x3
+    1a9e:	48 01 d0             	add    rax,rdx
+    1aa1:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+    1aa5:	48 89 10             	mov    QWORD PTR [rax],rdx
+    // printf("Successfully pushed");
+		// Allow consumers eat the item.
+		tp->head = INT_MAX;
+    1aa8:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1aac:	c7 80 b4 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x1b4],0x7fffffff
+	}
+    1ab6:	90                   	nop
+    1ab7:	c9                   	leave  
+    1ab8:	c3                   	ret    
+
+0000000000001ab9 <pop>:
+
+// def pop
+struct io_operation*
+pop(struct client_t* client_t)
+	{
+    1ab9:	f3 0f 1e fa          	endbr64 
+    1abd:	55                   	push   rbp
+    1abe:	48 89 e5             	mov    rbp,rsp
+    1ac1:	48 83 ec 40          	sub    rsp,0x40
+    1ac5:	48 89 7d c8          	mov    QWORD PTR [rbp-0x38],rdi
+		
+		struct client_t *tp = client_t;
+    1ac9:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1acd:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    struct ringbuffer *rb = client_t->ringbuffer;
+    1ad1:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1ad5:	48 8b 80 a8 00 00 00 	mov    rax,QWORD PTR [rax+0xa8]
+    1adc:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+		 * See comments for push().
+		 *
+		 * Loads and stores are not reordered with locked instructions,
+		 * se we don't need a memory barrier here.
+		 */
+		tp->tail = rb->tail;
+    1ae0:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1ae4:	8b 50 0c             	mov    edx,DWORD PTR [rax+0xc]
+    1ae7:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1aeb:	89 90 28 01 00 00    	mov    DWORD PTR [rax+0x128],edx
+    // printf("Got tail \n");
+		tp->tail = __atomic_fetch_add(&rb->tail, 1, __ATOMIC_SEQ_CST);
+    1af1:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1af5:	48 83 c0 0c          	add    rax,0xc
+    1af9:	ba 01 00 00 00       	mov    edx,0x1
+    1afe:	f0 0f c1 10          	lock xadd DWORD PTR [rax],edx
+    1b02:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1b06:	89 90 28 01 00 00    	mov    DWORD PTR [rax+0x128],edx
+    tp->tail = tp->tail % client_t->ringbuffer->size;
+    1b0c:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1b10:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1b16:	48 8b 55 c8          	mov    rdx,QWORD PTR [rbp-0x38]
+    1b1a:	48 8b 92 a8 00 00 00 	mov    rdx,QWORD PTR [rdx+0xa8]
+    1b21:	8b 4a 14             	mov    ecx,DWORD PTR [rdx+0x14]
+    1b24:	99                   	cdq    
+    1b25:	f7 f9                	idiv   ecx
+    1b27:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1b2b:	89 90 28 01 00 00    	mov    DWORD PTR [rax+0x128],edx
+    rb->tail = rb->tail % client_t->ringbuffer->size;
+    1b31:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1b35:	8b 40 0c             	mov    eax,DWORD PTR [rax+0xc]
+    1b38:	48 8b 55 c8          	mov    rdx,QWORD PTR [rbp-0x38]
+    1b3c:	48 8b 92 a8 00 00 00 	mov    rdx,QWORD PTR [rdx+0xa8]
+    1b43:	8b 4a 14             	mov    ecx,DWORD PTR [rdx+0x14]
+    1b46:	99                   	cdq    
+    1b47:	f7 f9                	idiv   ecx
+    1b49:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1b4d:	89 50 0c             	mov    DWORD PTR [rax+0xc],edx
+		 * this place shall never be rewritten by push() and
+		 * last_tail_ at push() is a guarantee.
+		 * last_head_ guaraties that no any consumer eats the item
+		 * before producer reserved the position writes to it.
+		 */
+		while (__builtin_expect(tp->tail >= (rb->last_head), 0))
+    1b50:	e9 87 00 00 00       	jmp    1bdc <pop+0x123>
+		{
+      // printf("Blocking during pop %d %d..\n", tp->tail, rb->last_head);
+			int min = rb->head;
+    1b55:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1b59:	8b 40 08             	mov    eax,DWORD PTR [rax+0x8]
+    1b5c:	89 45 dc             	mov    DWORD PTR [rbp-0x24],eax
+    // printf("%d min %d tail %d last head\n", min, client_t->tail, rb->last_head);
+			// Update the last_head_.
+			for (int i = 0; i < client_t->num_client_ts; ++i) {
+    1b5f:	c7 45 e0 00 00 00 00 	mov    DWORD PTR [rbp-0x20],0x0
+    1b66:	eb 34                	jmp    1b9c <pop+0xe3>
+        
+				int tmp_h = client_t->threads[i].head;
+    1b68:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1b6c:	48 8b 90 30 01 00 00 	mov    rdx,QWORD PTR [rax+0x130]
+    1b73:	8b 45 e0             	mov    eax,DWORD PTR [rbp-0x20]
+    1b76:	48 98                	cdqe   
+    1b78:	48 69 c0 70 01 00 00 	imul   rax,rax,0x170
+    1b7f:	48 01 d0             	add    rax,rdx
+    1b82:	8b 80 2c 01 00 00    	mov    eax,DWORD PTR [rax+0x12c]
+    1b88:	89 45 e4             	mov    DWORD PTR [rbp-0x1c],eax
+      
+				// Force compiler to use tmp_h exactly once.
+				asm volatile("" ::: "memory");
+
+				if (tmp_h < min) {
+    1b8b:	8b 45 e4             	mov    eax,DWORD PTR [rbp-0x1c]
+    1b8e:	3b 45 dc             	cmp    eax,DWORD PTR [rbp-0x24]
+    1b91:	7d 06                	jge    1b99 <pop+0xe0>
+					min = tmp_h;
+    1b93:	8b 45 e4             	mov    eax,DWORD PTR [rbp-0x1c]
+    1b96:	89 45 dc             	mov    DWORD PTR [rbp-0x24],eax
+			for (int i = 0; i < client_t->num_client_ts; ++i) {
+    1b99:	ff 45 e0             	inc    DWORD PTR [rbp-0x20]
+    1b9c:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1ba0:	8b 80 38 01 00 00    	mov    eax,DWORD PTR [rax+0x138]
+    1ba6:	39 45 e0             	cmp    DWORD PTR [rbp-0x20],eax
+    1ba9:	7c bd                	jl     1b68 <pop+0xaf>
+          }
+			}
+			rb->last_head = min;
+    1bab:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1baf:	8b 55 dc             	mov    edx,DWORD PTR [rbp-0x24]
+    1bb2:	89 10                	mov    DWORD PTR [rax],edx
+
+			if (tp->tail < (rb->last_head)) {
+    1bb4:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1bb8:	8b 90 28 01 00 00    	mov    edx,DWORD PTR [rax+0x128]
+    1bbe:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1bc2:	8b 00                	mov    eax,DWORD PTR [rax]
+    1bc4:	39 c2                	cmp    edx,eax
+    1bc6:	7c 37                	jl     1bff <pop+0x146>
+        
+				break;
+        	}
+
+			if (rb->stopped) { return -1; }
+    1bc8:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1bcc:	8b 40 20             	mov    eax,DWORD PTR [rax+0x20]
+    1bcf:	85 c0                	test   eax,eax
+    1bd1:	74 09                	je     1bdc <pop+0x123>
+    1bd3:	48 c7 c0 ff ff ff ff 	mov    rax,0xffffffffffffffff
+    1bda:	eb 7f                	jmp    1c5b <pop+0x1a2>
+		while (__builtin_expect(tp->tail >= (rb->last_head), 0))
+    1bdc:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1be0:	8b 90 28 01 00 00    	mov    edx,DWORD PTR [rax+0x128]
+    1be6:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1bea:	8b 00                	mov    eax,DWORD PTR [rax]
+    1bec:	39 c2                	cmp    edx,eax
+    1bee:	0f 9d c0             	setge  al
+    1bf1:	0f b6 c0             	movzx  eax,al
+    1bf4:	48 85 c0             	test   rax,rax
+    1bf7:	0f 85 58 ff ff ff    	jne    1b55 <pop+0x9c>
+    1bfd:	eb 01                	jmp    1c00 <pop+0x147>
+				break;
+    1bff:	90                   	nop
+
+		}
+		struct io_operation *ret = (tp->ringbuffer->operations[tp->tail]);
+    1c00:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1c04:	48 8b 80 a8 00 00 00 	mov    rax,QWORD PTR [rax+0xa8]
+    1c0b:	48 8b 50 18          	mov    rdx,QWORD PTR [rax+0x18]
+    1c0f:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1c13:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1c19:	48 98                	cdqe   
+    1c1b:	48 c1 e0 03          	shl    rax,0x3
+    1c1f:	48 01 d0             	add    rax,rdx
+    1c22:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1c25:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+		printf("Returning popped item %d\n", tp->tail);
+    1c29:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1c2d:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1c33:	89 c6                	mov    esi,eax
+    1c35:	48 8d 05 fe 23 00 00 	lea    rax,[rip+0x23fe]        # 403a <_IO_stdin_used+0x3a>
+    1c3c:	48 89 c7             	mov    rdi,rax
+    1c3f:	b8 00 00 00 00       	mov    eax,0x0
+    1c44:	e8 07 f6 ff ff       	call   1250 <printf@plt>
+		// Allow producers rewrite the slot.
+		tp->tail = INT_MAX;
+    1c49:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1c4d:	c7 80 28 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x128],0x7fffffff
+		return ret;
+    1c57:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+	}
+    1c5b:	c9                   	leave  
+    1c5c:	c3                   	ret    
+
+0000000000001c5d <pop_nonblocking>:
+
+// def pop_nonblocking
+struct io_operation*
+pop_nonblocking(struct client_t* client_t)
+	{
+    1c5d:	f3 0f 1e fa          	endbr64 
+    1c61:	55                   	push   rbp
+    1c62:	48 89 e5             	mov    rbp,rsp
+    1c65:	48 83 ec 40          	sub    rsp,0x40
+    1c69:	48 89 7d c8          	mov    QWORD PTR [rbp-0x38],rdi
+		
+		struct client_t *tp = client_t;
+    1c6d:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1c71:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    struct ringbuffer *rb = client_t->ringbuffer;
+    1c75:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1c79:	48 8b 80 a8 00 00 00 	mov    rax,QWORD PTR [rax+0xa8]
+    1c80:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+		 * See comments for push().
+		 *
+		 * Loads and stores are not reordered with locked instructions,
+		 * se we don't need a memory barrier here.
+		 */
+		tp->tail = rb->tail;
+    1c84:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1c88:	8b 50 0c             	mov    edx,DWORD PTR [rax+0xc]
+    1c8b:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1c8f:	89 90 28 01 00 00    	mov    DWORD PTR [rax+0x128],edx
+    // printf("Got tail \n");
+		tp->tail = __atomic_fetch_add(&rb->tail, 1, __ATOMIC_SEQ_CST);
+    1c95:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1c99:	48 83 c0 0c          	add    rax,0xc
+    1c9d:	ba 01 00 00 00       	mov    edx,0x1
+    1ca2:	f0 0f c1 10          	lock xadd DWORD PTR [rax],edx
+    1ca6:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1caa:	89 90 28 01 00 00    	mov    DWORD PTR [rax+0x128],edx
+    tp->tail = tp->tail % client_t->ringbuffer->size;
+    1cb0:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1cb4:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1cba:	48 8b 55 c8          	mov    rdx,QWORD PTR [rbp-0x38]
+    1cbe:	48 8b 92 a8 00 00 00 	mov    rdx,QWORD PTR [rdx+0xa8]
+    1cc5:	8b 4a 14             	mov    ecx,DWORD PTR [rdx+0x14]
+    1cc8:	99                   	cdq    
+    1cc9:	f7 f9                	idiv   ecx
+    1ccb:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1ccf:	89 90 28 01 00 00    	mov    DWORD PTR [rax+0x128],edx
+    rb->tail = rb->tail % client_t->ringbuffer->size;
+    1cd5:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1cd9:	8b 40 0c             	mov    eax,DWORD PTR [rax+0xc]
+    1cdc:	48 8b 55 c8          	mov    rdx,QWORD PTR [rbp-0x38]
+    1ce0:	48 8b 92 a8 00 00 00 	mov    rdx,QWORD PTR [rdx+0xa8]
+    1ce7:	8b 4a 14             	mov    ecx,DWORD PTR [rdx+0x14]
+    1cea:	99                   	cdq    
+    1ceb:	f7 f9                	idiv   ecx
+    1ced:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1cf1:	89 50 0c             	mov    DWORD PTR [rax+0xc],edx
+		// printf("%d %d\n", tp->tail, rb->last_head);
+		while (__builtin_expect(tp->tail >= (rb->last_head), 0))
+    1cf4:	90                   	nop
+    1cf5:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1cf9:	8b 90 28 01 00 00    	mov    edx,DWORD PTR [rax+0x128]
+    1cff:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1d03:	8b 00                	mov    eax,DWORD PTR [rax]
+    1d05:	39 c2                	cmp    edx,eax
+    1d07:	0f 9d c0             	setge  al
+    1d0a:	0f b6 c0             	movzx  eax,al
+    1d0d:	48 85 c0             	test   rax,rax
+    1d10:	0f 84 8b 00 00 00    	je     1da1 <pop_nonblocking+0x144>
+		{
+      // printf("Blocking during pop %d %d..\n", tp->tail, rb->last_head);
+			int min = rb->head;
+    1d16:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1d1a:	8b 40 08             	mov    eax,DWORD PTR [rax+0x8]
+    1d1d:	89 45 dc             	mov    DWORD PTR [rbp-0x24],eax
+    // printf("%d min %d tail %d last head\n", min, client_t->tail, rb->last_head);
+			// Update the last_head_.
+			for (int i = 0; i < client_t->num_client_ts; ++i) {
+    1d20:	c7 45 e0 00 00 00 00 	mov    DWORD PTR [rbp-0x20],0x0
+    1d27:	eb 34                	jmp    1d5d <pop_nonblocking+0x100>
+        
+				int tmp_h = client_t->threads[i].head;
+    1d29:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1d2d:	48 8b 90 30 01 00 00 	mov    rdx,QWORD PTR [rax+0x130]
+    1d34:	8b 45 e0             	mov    eax,DWORD PTR [rbp-0x20]
+    1d37:	48 98                	cdqe   
+    1d39:	48 69 c0 70 01 00 00 	imul   rax,rax,0x170
+    1d40:	48 01 d0             	add    rax,rdx
+    1d43:	8b 80 2c 01 00 00    	mov    eax,DWORD PTR [rax+0x12c]
+    1d49:	89 45 e4             	mov    DWORD PTR [rbp-0x1c],eax
+      
+				// Force compiler to use tmp_h exactly once.
+				asm volatile("" ::: "memory");
+
+				if (tmp_h < min) {
+    1d4c:	8b 45 e4             	mov    eax,DWORD PTR [rbp-0x1c]
+    1d4f:	3b 45 dc             	cmp    eax,DWORD PTR [rbp-0x24]
+    1d52:	7d 06                	jge    1d5a <pop_nonblocking+0xfd>
+					min = tmp_h;
+    1d54:	8b 45 e4             	mov    eax,DWORD PTR [rbp-0x1c]
+    1d57:	89 45 dc             	mov    DWORD PTR [rbp-0x24],eax
+			for (int i = 0; i < client_t->num_client_ts; ++i) {
+    1d5a:	ff 45 e0             	inc    DWORD PTR [rbp-0x20]
+    1d5d:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1d61:	8b 80 38 01 00 00    	mov    eax,DWORD PTR [rax+0x138]
+    1d67:	39 45 e0             	cmp    DWORD PTR [rbp-0x20],eax
+    1d6a:	7c bd                	jl     1d29 <pop_nonblocking+0xcc>
+          }
+			}
+			rb->last_head = min;
+    1d6c:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1d70:	8b 55 dc             	mov    edx,DWORD PTR [rbp-0x24]
+    1d73:	89 10                	mov    DWORD PTR [rax],edx
+
+			if (tp->tail < (rb->last_head)) {
+    1d75:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1d79:	8b 90 28 01 00 00    	mov    edx,DWORD PTR [rax+0x128]
+    1d7f:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1d83:	8b 00                	mov    eax,DWORD PTR [rax]
+    1d85:	39 c2                	cmp    edx,eax
+    1d87:	7c 14                	jl     1d9d <pop_nonblocking+0x140>
+        
+				break;
+        	}
+
+			if (rb->stopped) { return -1; }
+    1d89:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1d8d:	8b 40 20             	mov    eax,DWORD PTR [rax+0x20]
+    1d90:	85 c0                	test   eax,eax
+    1d92:	74 0c                	je     1da0 <pop_nonblocking+0x143>
+    1d94:	48 c7 c0 ff ff ff ff 	mov    rax,0xffffffffffffffff
+    1d9b:	eb 7e                	jmp    1e1b <pop_nonblocking+0x1be>
+				break;
+    1d9d:	90                   	nop
+    1d9e:	eb 01                	jmp    1da1 <pop_nonblocking+0x144>
+			break;
+    1da0:	90                   	nop
+
+		}
+		
+		if (__builtin_expect(tp->tail >= (rb->last_head), 0)) {
+    1da1:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1da5:	8b 90 28 01 00 00    	mov    edx,DWORD PTR [rax+0x128]
+    1dab:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1daf:	8b 00                	mov    eax,DWORD PTR [rax]
+    1db1:	39 c2                	cmp    edx,eax
+    1db3:	0f 9d c0             	setge  al
+    1db6:	0f b6 c0             	movzx  eax,al
+    1db9:	48 85 c0             	test   rax,rax
+    1dbc:	74 09                	je     1dc7 <pop_nonblocking+0x16a>
+			return -1;
+    1dbe:	48 c7 c0 ff ff ff ff 	mov    rax,0xffffffffffffffff
+    1dc5:	eb 54                	jmp    1e1b <pop_nonblocking+0x1be>
+		}
+
+		struct io_operation *ret = (rb->operations[tp->tail]);
+    1dc7:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1dcb:	48 8b 50 18          	mov    rdx,QWORD PTR [rax+0x18]
+    1dcf:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1dd3:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1dd9:	48 98                	cdqe   
+    1ddb:	48 c1 e0 03          	shl    rax,0x3
+    1ddf:	48 01 d0             	add    rax,rdx
+    1de2:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1de5:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+		printf("Returning popped item %d\n", tp->tail);
+    1de9:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1ded:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1df3:	89 c6                	mov    esi,eax
+    1df5:	48 8d 05 3e 22 00 00 	lea    rax,[rip+0x223e]        # 403a <_IO_stdin_used+0x3a>
+    1dfc:	48 89 c7             	mov    rdi,rax
+    1dff:	b8 00 00 00 00       	mov    eax,0x0
+    1e04:	e8 47 f4 ff ff       	call   1250 <printf@plt>
+		// Allow producers rewrite the slot.
+		tp->tail = INT_MAX;
+    1e09:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1e0d:	c7 80 28 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x128],0x7fffffff
+		return ret;
+    1e17:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+	}
+    1e1b:	c9                   	leave  
+    1e1c:	c3                   	ret    
+
+0000000000001e1d <pop_nonblocking_rb>:
+
+// def pop_nonblocking_rb
+struct io_operation*
+pop_nonblocking_rb(struct ringbuffer* rb, struct client_t* client_t)
+	{
+    1e1d:	f3 0f 1e fa          	endbr64 
+    1e21:	55                   	push   rbp
+    1e22:	48 89 e5             	mov    rbp,rsp
+    1e25:	48 83 ec 30          	sub    rsp,0x30
+    1e29:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    1e2d:	48 89 75 d0          	mov    QWORD PTR [rbp-0x30],rsi
+		struct client_t *tp = client_t;
+    1e31:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    1e35:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+		tp->tail = rb->tail;
+    1e39:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1e3d:	8b 50 0c             	mov    edx,DWORD PTR [rax+0xc]
+    1e40:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1e44:	89 90 28 01 00 00    	mov    DWORD PTR [rax+0x128],edx
+		int unclaimed = rb->tail - rb->head;
+    1e4a:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1e4e:	8b 50 0c             	mov    edx,DWORD PTR [rax+0xc]
+    1e51:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1e55:	8b 48 08             	mov    ecx,DWORD PTR [rax+0x8]
+    1e58:	89 d0                	mov    eax,edx
+    1e5a:	29 c8                	sub    eax,ecx
+    1e5c:	89 45 e8             	mov    DWORD PTR [rbp-0x18],eax
+		printf("%d\n", unclaimed);
+    1e5f:	8b 45 e8             	mov    eax,DWORD PTR [rbp-0x18]
+    1e62:	89 c6                	mov    esi,eax
+    1e64:	48 8d 05 e9 21 00 00 	lea    rax,[rip+0x21e9]        # 4054 <_IO_stdin_used+0x54>
+    1e6b:	48 89 c7             	mov    rdi,rax
+    1e6e:	b8 00 00 00 00       	mov    eax,0x0
+    1e73:	e8 d8 f3 ff ff       	call   1250 <printf@plt>
+		if (abs(unclaimed) > 0) {
+    1e78:	8b 45 e8             	mov    eax,DWORD PTR [rbp-0x18]
+    1e7b:	99                   	cdq    
+    1e7c:	31 d0                	xor    eax,edx
+    1e7e:	29 d0                	sub    eax,edx
+    1e80:	85 c0                	test   eax,eax
+    1e82:	0f 8e 82 00 00 00    	jle    1f0a <pop_nonblocking_rb+0xed>
+				// printf("Empty\n");
+			// printf("Got tail \n");
+			tp->tail = __atomic_fetch_add(&rb->tail, 1, __ATOMIC_SEQ_CST);
+    1e88:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1e8c:	48 83 c0 0c          	add    rax,0xc
+    1e90:	ba 01 00 00 00       	mov    edx,0x1
+    1e95:	f0 0f c1 10          	lock xadd DWORD PTR [rax],edx
+    1e99:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1e9d:	89 90 28 01 00 00    	mov    DWORD PTR [rax+0x128],edx
+			tp->tail = tp->tail % client_t->ringbuffer->size;
+    1ea3:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1ea7:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1ead:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+    1eb1:	48 8b 92 a8 00 00 00 	mov    rdx,QWORD PTR [rdx+0xa8]
+    1eb8:	8b 4a 14             	mov    ecx,DWORD PTR [rdx+0x14]
+    1ebb:	99                   	cdq    
+    1ebc:	f7 f9                	idiv   ecx
+    1ebe:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1ec2:	89 90 28 01 00 00    	mov    DWORD PTR [rax+0x128],edx
+			rb->tail = rb->tail % client_t->ringbuffer->size;
+    1ec8:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1ecc:	8b 40 0c             	mov    eax,DWORD PTR [rax+0xc]
+    1ecf:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+    1ed3:	48 8b 92 a8 00 00 00 	mov    rdx,QWORD PTR [rdx+0xa8]
+    1eda:	8b 4a 14             	mov    ecx,DWORD PTR [rdx+0x14]
+    1edd:	99                   	cdq    
+    1ede:	f7 f9                	idiv   ecx
+    1ee0:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1ee4:	89 50 0c             	mov    DWORD PTR [rax+0xc],edx
+		} else {
+			return -1;
+		}
+			// printf("%d %d", tp->tail, rb->last_head);
+		while (__builtin_expect(tp->tail >= (rb->last_head), 0))
+    1ee7:	90                   	nop
+    1ee8:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1eec:	8b 90 28 01 00 00    	mov    edx,DWORD PTR [rax+0x128]
+    1ef2:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1ef6:	8b 00                	mov    eax,DWORD PTR [rax]
+    1ef8:	39 c2                	cmp    edx,eax
+    1efa:	0f 9d c0             	setge  al
+    1efd:	0f b6 c0             	movzx  eax,al
+    1f00:	48 85 c0             	test   rax,rax
+    1f03:	75 11                	jne    1f16 <pop_nonblocking_rb+0xf9>
+    1f05:	e9 97 00 00 00       	jmp    1fa1 <pop_nonblocking_rb+0x184>
+			return -1;
+    1f0a:	48 c7 c0 ff ff ff ff 	mov    rax,0xffffffffffffffff
+    1f11:	e9 05 01 00 00       	jmp    201b <pop_nonblocking_rb+0x1fe>
+		{
+      // printf("Blocking during pop %d %d..\n", tp->tail, rb->last_head);
+			int min = rb->head;
+    1f16:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1f1a:	8b 40 08             	mov    eax,DWORD PTR [rax+0x8]
+    1f1d:	89 45 e0             	mov    DWORD PTR [rbp-0x20],eax
+    // printf("%d min %d tail %d last head\n", min, client_t->tail, rb->last_head);
+			// Update the last_head_.
+			for (int i = 0; i < client_t->num_client_ts; ++i) {
+    1f20:	c7 45 e4 00 00 00 00 	mov    DWORD PTR [rbp-0x1c],0x0
+    1f27:	eb 34                	jmp    1f5d <pop_nonblocking_rb+0x140>
+        
+				int tmp_h = client_t->threads[i].head;
+    1f29:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    1f2d:	48 8b 90 30 01 00 00 	mov    rdx,QWORD PTR [rax+0x130]
+    1f34:	8b 45 e4             	mov    eax,DWORD PTR [rbp-0x1c]
+    1f37:	48 98                	cdqe   
+    1f39:	48 69 c0 70 01 00 00 	imul   rax,rax,0x170
+    1f40:	48 01 d0             	add    rax,rdx
+    1f43:	8b 80 2c 01 00 00    	mov    eax,DWORD PTR [rax+0x12c]
+    1f49:	89 45 ec             	mov    DWORD PTR [rbp-0x14],eax
+      
+				// Force compiler to use tmp_h exactly once.
+				asm volatile("" ::: "memory");
+
+				if (tmp_h < min) {
+    1f4c:	8b 45 ec             	mov    eax,DWORD PTR [rbp-0x14]
+    1f4f:	3b 45 e0             	cmp    eax,DWORD PTR [rbp-0x20]
+    1f52:	7d 06                	jge    1f5a <pop_nonblocking_rb+0x13d>
+					min = tmp_h;
+    1f54:	8b 45 ec             	mov    eax,DWORD PTR [rbp-0x14]
+    1f57:	89 45 e0             	mov    DWORD PTR [rbp-0x20],eax
+			for (int i = 0; i < client_t->num_client_ts; ++i) {
+    1f5a:	ff 45 e4             	inc    DWORD PTR [rbp-0x1c]
+    1f5d:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    1f61:	8b 80 38 01 00 00    	mov    eax,DWORD PTR [rax+0x138]
+    1f67:	39 45 e4             	cmp    DWORD PTR [rbp-0x1c],eax
+    1f6a:	7c bd                	jl     1f29 <pop_nonblocking_rb+0x10c>
+          }
+			}
+			rb->last_head = min;
+    1f6c:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1f70:	8b 55 e0             	mov    edx,DWORD PTR [rbp-0x20]
+    1f73:	89 10                	mov    DWORD PTR [rax],edx
+
+			if (tp->tail < (rb->last_head)) {
+    1f75:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1f79:	8b 90 28 01 00 00    	mov    edx,DWORD PTR [rax+0x128]
+    1f7f:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1f83:	8b 00                	mov    eax,DWORD PTR [rax]
+    1f85:	39 c2                	cmp    edx,eax
+    1f87:	7c 14                	jl     1f9d <pop_nonblocking_rb+0x180>
+        
+				break;
+        	}
+
+			if (rb->stopped) { return -1; }
+    1f89:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1f8d:	8b 40 20             	mov    eax,DWORD PTR [rax+0x20]
+    1f90:	85 c0                	test   eax,eax
+    1f92:	74 0c                	je     1fa0 <pop_nonblocking_rb+0x183>
+    1f94:	48 c7 c0 ff ff ff ff 	mov    rax,0xffffffffffffffff
+    1f9b:	eb 7e                	jmp    201b <pop_nonblocking_rb+0x1fe>
+				break;
+    1f9d:	90                   	nop
+    1f9e:	eb 01                	jmp    1fa1 <pop_nonblocking_rb+0x184>
+			break;
+    1fa0:	90                   	nop
+
+		}
+		if (__builtin_expect(tp->tail >= (rb->last_head), 0)) {
+    1fa1:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1fa5:	8b 90 28 01 00 00    	mov    edx,DWORD PTR [rax+0x128]
+    1fab:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1faf:	8b 00                	mov    eax,DWORD PTR [rax]
+    1fb1:	39 c2                	cmp    edx,eax
+    1fb3:	0f 9d c0             	setge  al
+    1fb6:	0f b6 c0             	movzx  eax,al
+    1fb9:	48 85 c0             	test   rax,rax
+    1fbc:	74 09                	je     1fc7 <pop_nonblocking_rb+0x1aa>
+			return -1;
+    1fbe:	48 c7 c0 ff ff ff ff 	mov    rax,0xffffffffffffffff
+    1fc5:	eb 54                	jmp    201b <pop_nonblocking_rb+0x1fe>
+		}
+		
+
+		struct io_operation *ret = (rb->operations[tp->tail]);
+    1fc7:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1fcb:	48 8b 50 18          	mov    rdx,QWORD PTR [rax+0x18]
+    1fcf:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1fd3:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1fd9:	48 98                	cdqe   
+    1fdb:	48 c1 e0 03          	shl    rax,0x3
+    1fdf:	48 01 d0             	add    rax,rdx
+    1fe2:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1fe5:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+		printf("Returning popped item %d\n", tp->tail);
+    1fe9:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1fed:	8b 80 28 01 00 00    	mov    eax,DWORD PTR [rax+0x128]
+    1ff3:	89 c6                	mov    esi,eax
+    1ff5:	48 8d 05 3e 20 00 00 	lea    rax,[rip+0x203e]        # 403a <_IO_stdin_used+0x3a>
+    1ffc:	48 89 c7             	mov    rdi,rax
+    1fff:	b8 00 00 00 00       	mov    eax,0x0
+    2004:	e8 47 f2 ff ff       	call   1250 <printf@plt>
+		// Allow producers rewrite the slot.
+		tp->tail = INT_MAX;
+    2009:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    200d:	c7 80 28 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x128],0x7fffffff
+		return ret;
+    2017:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+	}
+    201b:	c9                   	leave  
+    201c:	c3                   	ret    
+
+000000000000201d <do_use_fd>:
+
+int do_use_fd(struct client_t* client_t, int epollfd, struct epoll_event ev, int i, fd_set master, int *fdmax, int listener, int num_threads) {
+    201d:	f3 0f 1e fa          	endbr64 
+    2021:	55                   	push   rbp
+    2022:	48 89 e5             	mov    rbp,rsp
+    2025:	48 81 ec 50 01 00 00 	sub    rsp,0x150
+    202c:	48 89 bd c8 fe ff ff 	mov    QWORD PTR [rbp-0x138],rdi
+    2033:	89 b5 c4 fe ff ff    	mov    DWORD PTR [rbp-0x13c],esi
+    2039:	89 95 c0 fe ff ff    	mov    DWORD PTR [rbp-0x140],edx
+    203f:	48 89 8d b8 fe ff ff 	mov    QWORD PTR [rbp-0x148],rcx
+    2046:	44 89 85 b4 fe ff ff 	mov    DWORD PTR [rbp-0x14c],r8d
+    204d:	44 89 8d b0 fe ff ff 	mov    DWORD PTR [rbp-0x150],r9d
+    2054:	64 48 8b 04 25 28 00 00 00 	mov    rax,QWORD PTR fs:0x28
+    205d:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    2061:	31 c0                	xor    eax,eax
+	printf("Waiting for message from socket\n");
+    2063:	48 8d 05 ee 1f 00 00 	lea    rax,[rip+0x1fee]        # 4058 <_IO_stdin_used+0x58>
+    206a:	48 89 c7             	mov    rdi,rax
+    206d:	e8 8e f1 ff ff       	call   1200 <puts@plt>
+    char buf[256];    // buffer for client data
+    int nbytes;
+    if ((nbytes = recv(i, buf, sizeof buf, 0)) <= 0) {
+    2072:	48 8d 85 f0 fe ff ff 	lea    rax,[rbp-0x110]
+    2079:	8b bd c0 fe ff ff    	mov    edi,DWORD PTR [rbp-0x140]
+    207f:	b9 00 00 00 00       	mov    ecx,0x0
+    2084:	ba 00 01 00 00       	mov    edx,0x100
+    2089:	48 89 c6             	mov    rsi,rax
+    208c:	e8 5f f1 ff ff       	call   11f0 <recv@plt>
+    2091:	89 85 e4 fe ff ff    	mov    DWORD PTR [rbp-0x11c],eax
+    2097:	83 bd e4 fe ff ff 00 	cmp    DWORD PTR [rbp-0x11c],0x0
+    209e:	0f 8f 7e 01 00 00    	jg     2222 <do_use_fd+0x205>
+	// got error or connection closed by client
+	if (nbytes == 0) {
+    20a4:	83 bd e4 fe ff ff 00 	cmp    DWORD PTR [rbp-0x11c],0x0
+    20ab:	75 1e                	jne    20cb <do_use_fd+0xae>
+	    // connection closed
+	    printf("selectserver: socket %d hung up\n", i);
+    20ad:	8b 85 c0 fe ff ff    	mov    eax,DWORD PTR [rbp-0x140]
+    20b3:	89 c6                	mov    esi,eax
+    20b5:	48 8d 05 bc 1f 00 00 	lea    rax,[rip+0x1fbc]        # 4078 <_IO_stdin_used+0x78>
+    20bc:	48 89 c7             	mov    rdi,rax
+    20bf:	b8 00 00 00 00       	mov    eax,0x0
+    20c4:	e8 87 f1 ff ff       	call   1250 <printf@plt>
+    20c9:	eb 0f                	jmp    20da <do_use_fd+0xbd>
+	} else {
+	    perror("recv");
+    20cb:	48 8d 05 c7 1f 00 00 	lea    rax,[rip+0x1fc7]        # 4099 <_IO_stdin_used+0x99>
+    20d2:	48 89 c7             	mov    rdi,rax
+    20d5:	e8 36 f2 ff ff       	call   1310 <perror@plt>
+	}
+		printf("Receive failed");
+    20da:	48 8d 05 bd 1f 00 00 	lea    rax,[rip+0x1fbd]        # 409e <_IO_stdin_used+0x9e>
+    20e1:	48 89 c7             	mov    rdi,rax
+    20e4:	b8 00 00 00 00       	mov    eax,0x0
+    20e9:	e8 62 f1 ff ff       	call   1250 <printf@plt>
+        ev.events = EPOLLIN | EPOLLOUT;
+    20ee:	c7 45 10 05 00 00 00 	mov    DWORD PTR [rbp+0x10],0x5
+        ev.data.fd = i;
+    20f5:	8b 85 c0 fe ff ff    	mov    eax,DWORD PTR [rbp-0x140]
+    20fb:	89 45 14             	mov    DWORD PTR [rbp+0x14],eax
+       if (epoll_ctl(epollfd, EPOLL_CTL_DEL, i, &ev) == -1) {
+    20fe:	8b 95 c0 fe ff ff    	mov    edx,DWORD PTR [rbp-0x140]
+    2104:	8b 85 c4 fe ff ff    	mov    eax,DWORD PTR [rbp-0x13c]
+    210a:	48 8d 4d 10          	lea    rcx,[rbp+0x10]
+    210e:	be 02 00 00 00       	mov    esi,0x2
+    2113:	89 c7                	mov    edi,eax
+    2115:	e8 76 f1 ff ff       	call   1290 <epoll_ctl@plt>
+    211a:	83 f8 ff             	cmp    eax,0xffffffff
+    211d:	75 19                	jne    2138 <do_use_fd+0x11b>
+    	   perror("epoll_ctl: conn_sock");
+    211f:	48 8d 05 87 1f 00 00 	lea    rax,[rip+0x1f87]        # 40ad <_IO_stdin_used+0xad>
+    2126:	48 89 c7             	mov    rdi,rax
+    2129:	e8 e2 f1 ff ff       	call   1310 <perror@plt>
+    	   exit(EXIT_FAILURE);
+    212e:	bf 01 00 00 00       	mov    edi,0x1
+    2133:	e8 f8 f1 ff ff       	call   1330 <exit@plt>
+       }
+
+	close(i); // bye!
+    2138:	8b 85 c0 fe ff ff    	mov    eax,DWORD PTR [rbp-0x140]
+    213e:	89 c7                	mov    edi,eax
+    2140:	e8 3b f1 ff ff       	call   1280 <close@plt>
+	FD_CLR(i, &master); // remove from master set
+    2145:	8b 85 c0 fe ff ff    	mov    eax,DWORD PTR [rbp-0x140]
+    214b:	8d 50 3f             	lea    edx,[rax+0x3f]
+    214e:	85 c0                	test   eax,eax
+    2150:	0f 48 c2             	cmovs  eax,edx
+    2153:	c1 f8 06             	sar    eax,0x6
+    2156:	89 c6                	mov    esi,eax
+    2158:	48 63 c6             	movsxd rax,esi
+    215b:	48 8b 54 c5 20       	mov    rdx,QWORD PTR [rbp+rax*8+0x20]
+    2160:	8b 85 c0 fe ff ff    	mov    eax,DWORD PTR [rbp-0x140]
+    2166:	83 e0 3f             	and    eax,0x3f
+    2169:	bf 01 00 00 00       	mov    edi,0x1
+    216e:	89 c1                	mov    ecx,eax
+    2170:	48 d3 e7             	shl    rdi,cl
+    2173:	48 89 f8             	mov    rax,rdi
+    2176:	48 f7 d0             	not    rax
+    2179:	48 21 c2             	and    rdx,rax
+    217c:	48 63 c6             	movsxd rax,esi
+    217f:	48 89 54 c5 20       	mov    QWORD PTR [rbp+rax*8+0x20],rdx
+	/** Announce to all available threads that there is a new socket leaving **/
+	struct io_operation* io_operation = calloc(1, sizeof(struct io_operation));
+    2184:	be 10 00 00 00       	mov    esi,0x10
+    2189:	bf 01 00 00 00       	mov    edi,0x1
+    218e:	e8 0d f1 ff ff       	call   12a0 <calloc@plt>
+    2193:	48 89 85 e8 fe ff ff 	mov    QWORD PTR [rbp-0x118],rax
+	io_operation->leave = 1;
+    219a:	48 8b 85 e8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x118]
+    21a1:	c7 40 08 01 00 00 00 	mov    DWORD PTR [rax+0x8],0x1
+	io_operation->conn_sock = i;
+    21a8:	48 8b 85 e8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x118]
+    21af:	8b 95 c0 fe ff ff    	mov    edx,DWORD PTR [rbp-0x140]
+    21b5:	89 10                	mov    DWORD PTR [rax],edx
+	for (int i = 0 ; i < num_threads; i++) {
+    21b7:	c7 85 dc fe ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0x124],0x0
+    21c1:	eb 47                	jmp    220a <do_use_fd+0x1ed>
+		push_rb_client(&client_t->announces[i], client_t, io_operation);
+    21c3:	48 8b 85 c8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x138]
+    21ca:	48 8b 88 40 01 00 00 	mov    rcx,QWORD PTR [rax+0x140]
+    21d1:	8b 85 dc fe ff ff    	mov    eax,DWORD PTR [rbp-0x124]
+    21d7:	48 63 d0             	movsxd rdx,eax
+    21da:	48 89 d0             	mov    rax,rdx
+    21dd:	48 c1 e0 02          	shl    rax,0x2
+    21e1:	48 01 d0             	add    rax,rdx
+    21e4:	48 c1 e0 03          	shl    rax,0x3
+    21e8:	48 01 c8             	add    rax,rcx
+    21eb:	48 8b 95 e8 fe ff ff 	mov    rdx,QWORD PTR [rbp-0x118]
+    21f2:	48 8b 8d c8 fe ff ff 	mov    rcx,QWORD PTR [rbp-0x138]
+    21f9:	48 89 ce             	mov    rsi,rcx
+    21fc:	48 89 c7             	mov    rdi,rax
+    21ff:	e8 85 f2 ff ff       	call   1489 <push_rb_client>
+	for (int i = 0 ; i < num_threads; i++) {
+    2204:	ff 85 dc fe ff ff    	inc    DWORD PTR [rbp-0x124]
+    220a:	8b 85 dc fe ff ff    	mov    eax,DWORD PTR [rbp-0x124]
+    2210:	3b 85 b0 fe ff ff    	cmp    eax,DWORD PTR [rbp-0x150]
+    2216:	7c ab                	jl     21c3 <do_use_fd+0x1a6>
+	}
+	return -1;
+    2218:	b8 ff ff ff ff       	mov    eax,0xffffffff
+    221d:	e9 c7 00 00 00       	jmp    22e9 <do_use_fd+0x2cc>
+    } else {
+		// we got some data from a client
+		for (int j = 0; j <= *fdmax; j++) {
+    2222:	c7 85 e0 fe ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0x120],0x0
+    222c:	e9 9e 00 00 00       	jmp    22cf <do_use_fd+0x2b2>
+			// send to everyone!
+			if (FD_ISSET(j, &master)) {
+    2231:	8b 85 e0 fe ff ff    	mov    eax,DWORD PTR [rbp-0x120]
+    2237:	8d 50 3f             	lea    edx,[rax+0x3f]
+    223a:	85 c0                	test   eax,eax
+    223c:	0f 48 c2             	cmovs  eax,edx
+    223f:	c1 f8 06             	sar    eax,0x6
+    2242:	48 98                	cdqe   
+    2244:	48 8b 54 c5 20       	mov    rdx,QWORD PTR [rbp+rax*8+0x20]
+    2249:	8b 85 e0 fe ff ff    	mov    eax,DWORD PTR [rbp-0x120]
+    224f:	83 e0 3f             	and    eax,0x3f
+    2252:	be 01 00 00 00       	mov    esi,0x1
+    2257:	89 c1                	mov    ecx,eax
+    2259:	48 d3 e6             	shl    rsi,cl
+    225c:	48 89 f0             	mov    rax,rsi
+    225f:	48 21 d0             	and    rax,rdx
+    2262:	48 85 c0             	test   rax,rax
+    2265:	74 62                	je     22c9 <do_use_fd+0x2ac>
+			printf("Sending data to client %d\n", j);
+    2267:	8b 85 e0 fe ff ff    	mov    eax,DWORD PTR [rbp-0x120]
+    226d:	89 c6                	mov    esi,eax
+    226f:	48 8d 05 4c 1e 00 00 	lea    rax,[rip+0x1e4c]        # 40c2 <_IO_stdin_used+0xc2>
+    2276:	48 89 c7             	mov    rdi,rax
+    2279:	b8 00 00 00 00       	mov    eax,0x0
+    227e:	e8 cd ef ff ff       	call   1250 <printf@plt>
+			// except the listener and ourselves
+			if (j != i) {
+    2283:	8b 85 e0 fe ff ff    	mov    eax,DWORD PTR [rbp-0x120]
+    2289:	3b 85 c0 fe ff ff    	cmp    eax,DWORD PTR [rbp-0x140]
+    228f:	74 38                	je     22c9 <do_use_fd+0x2ac>
+				if (send(j, buf, nbytes, 0) == -1) {
+    2291:	8b 85 e4 fe ff ff    	mov    eax,DWORD PTR [rbp-0x11c]
+    2297:	48 63 d0             	movsxd rdx,eax
+    229a:	48 8d 85 f0 fe ff ff 	lea    rax,[rbp-0x110]
+    22a1:	8b bd e0 fe ff ff    	mov    edi,DWORD PTR [rbp-0x120]
+    22a7:	b9 00 00 00 00       	mov    ecx,0x0
+    22ac:	48 89 c6             	mov    rsi,rax
+    22af:	e8 8c ef ff ff       	call   1240 <send@plt>
+    22b4:	48 83 f8 ff          	cmp    rax,0xffffffffffffffff
+    22b8:	75 0f                	jne    22c9 <do_use_fd+0x2ac>
+				perror("send");
+    22ba:	48 8d 05 1c 1e 00 00 	lea    rax,[rip+0x1e1c]        # 40dd <_IO_stdin_used+0xdd>
+    22c1:	48 89 c7             	mov    rdi,rax
+    22c4:	e8 47 f0 ff ff       	call   1310 <perror@plt>
+		for (int j = 0; j <= *fdmax; j++) {
+    22c9:	ff 85 e0 fe ff ff    	inc    DWORD PTR [rbp-0x120]
+    22cf:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    22d6:	8b 00                	mov    eax,DWORD PTR [rax]
+    22d8:	39 85 e0 fe ff ff    	cmp    DWORD PTR [rbp-0x120],eax
+    22de:	0f 8e 4d ff ff ff    	jle    2231 <do_use_fd+0x214>
+				}
+			}
+			}
+		}
+	return 0;
+    22e4:	b8 00 00 00 00       	mov    eax,0x0
+    }
+}
+    22e9:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    22ed:	64 48 2b 14 25 28 00 00 00 	sub    rdx,QWORD PTR fs:0x28
+    22f6:	74 05                	je     22fd <do_use_fd+0x2e0>
+    22f8:	e8 33 ef ff ff       	call   1230 <__stack_chk_fail@plt>
+    22fd:	c9                   	leave  
+    22fe:	c3                   	ret    
+
+00000000000022ff <setunblocking>:
+
+int setunblocking(int fd)
+{
+    22ff:	f3 0f 1e fa          	endbr64 
+    2303:	55                   	push   rbp
+    2304:	48 89 e5             	mov    rbp,rsp
+    2307:	48 83 ec 20          	sub    rsp,0x20
+    230b:	89 7d ec             	mov    DWORD PTR [rbp-0x14],edi
+    int flags;
+
+    /* If they have O_NONBLOCK, use the Posix way to do it */
+#if defined(O_NONBLOCK)
+    /* Fixme: O_NONBLOCK is defined but broken on SunOS 4.1.x and AIX 3.2.5. */
+    if (-1 == (flags = fcntl(fd, F_GETFL, 0)))
+    230e:	8b 45 ec             	mov    eax,DWORD PTR [rbp-0x14]
+    2311:	ba 00 00 00 00       	mov    edx,0x0
+    2316:	be 03 00 00 00       	mov    esi,0x3
+    231b:	89 c7                	mov    edi,eax
+    231d:	b8 00 00 00 00       	mov    eax,0x0
+    2322:	e8 f9 ee ff ff       	call   1220 <fcntl@plt>
+    2327:	89 45 fc             	mov    DWORD PTR [rbp-0x4],eax
+    232a:	83 7d fc ff          	cmp    DWORD PTR [rbp-0x4],0xffffffff
+    232e:	75 07                	jne    2337 <setunblocking+0x38>
+        flags = 0;
+    2330:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+    return fcntl(fd, F_SETFL, flags | O_NONBLOCK);
+    2337:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+    233a:	80 cc 08             	or     ah,0x8
+    233d:	89 c2                	mov    edx,eax
+    233f:	8b 45 ec             	mov    eax,DWORD PTR [rbp-0x14]
+    2342:	be 04 00 00 00       	mov    esi,0x4
+    2347:	89 c7                	mov    edi,eax
+    2349:	b8 00 00 00 00       	mov    eax,0x0
+    234e:	e8 cd ee ff ff       	call   1220 <fcntl@plt>
+#else
+    /* Otherwise, use the old way of doing it */
+    flags = 1;
+    return ioctl(fd, FIOBIO, &flags);
+#endif
+}
+    2353:	c9                   	leave  
+    2354:	c3                   	ret    
+
+0000000000002355 <run_client>:
+
+
+void * run_client(void * args) {
+    2355:	f3 0f 1e fa          	endbr64 
+    2359:	55                   	push   rbp
+    235a:	48 89 e5             	mov    rbp,rsp
+    235d:	48 81 ec f0 00 00 00 	sub    rsp,0xf0
+    2364:	48 89 bd 18 ff ff ff 	mov    QWORD PTR [rbp-0xe8],rdi
+    236b:	64 48 8b 04 25 28 00 00 00 	mov    rax,QWORD PTR fs:0x28
+    2374:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    2378:	31 c0                	xor    eax,eax
+	client_t* client_t = args;
+    237a:	48 8b 85 18 ff ff ff 	mov    rax,QWORD PTR [rbp-0xe8]
+    2381:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+	int n = 0;
+    2388:	c7 85 2c ff ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0xd4],0x0
+	int nfds = 0;
+    2392:	c7 85 3c ff ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0xc4],0x0
+	int connected = 0;
+    239c:	c7 85 30 ff ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0xd0],0x0
+	int listener = -1;
+    23a6:	c7 85 40 ff ff ff ff ff ff ff 	mov    DWORD PTR [rbp-0xc0],0xffffffff
+	int fdmax = -1;
+    23b0:	c7 85 28 ff ff ff ff ff ff ff 	mov    DWORD PTR [rbp-0xd8],0xffffffff
+	struct epoll_event ev;
+	int epollfd;
+    fd_set master;    // master file descriptor list
+	while (client_t->running) {
+    23ba:	e9 5d 04 00 00       	jmp    281c <run_client+0x4c7>
+		/** First we check if any other threads have new sockets */
+		struct io_operation* new_socket = pop_nonblocking_rb(client_t->thread_ringbuffer, args);
+    23bf:	48 8b 85 48 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb8]
+    23c6:	48 8b 80 50 01 00 00 	mov    rax,QWORD PTR [rax+0x150]
+    23cd:	48 8b 95 18 ff ff ff 	mov    rdx,QWORD PTR [rbp-0xe8]
+    23d4:	48 89 d6             	mov    rsi,rdx
+    23d7:	48 89 c7             	mov    rdi,rax
+    23da:	e8 3e fa ff ff       	call   1e1d <pop_nonblocking_rb>
+    23df:	48 89 85 50 ff ff ff 	mov    QWORD PTR [rbp-0xb0],rax
+		if (new_socket != -1) {
+    23e6:	48 83 bd 50 ff ff ff ff 	cmp    QWORD PTR [rbp-0xb0],0xffffffffffffffff
+    23ee:	0f 84 e9 02 00 00    	je     26dd <run_client+0x388>
+			if (new_socket->announce == 1) {
+    23f4:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+    23fb:	8b 40 04             	mov    eax,DWORD PTR [rax+0x4]
+    23fe:	83 f8 01             	cmp    eax,0x1
+    2401:	75 73                	jne    2476 <run_client+0x121>
+			   // printf("Socket joining thread\n");
+			   FD_SET(new_socket->conn_sock, &master);
+    2403:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+    240a:	8b 00                	mov    eax,DWORD PTR [rax]
+    240c:	8d 50 3f             	lea    edx,[rax+0x3f]
+    240f:	85 c0                	test   eax,eax
+    2411:	0f 48 c2             	cmovs  eax,edx
+    2414:	c1 f8 06             	sar    eax,0x6
+    2417:	89 c6                	mov    esi,eax
+    2419:	48 63 c6             	movsxd rax,esi
+    241c:	48 8b 94 c5 70 ff ff ff 	mov    rdx,QWORD PTR [rbp+rax*8-0x90]
+    2424:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+    242b:	8b 00                	mov    eax,DWORD PTR [rax]
+    242d:	83 e0 3f             	and    eax,0x3f
+    2430:	bf 01 00 00 00       	mov    edi,0x1
+    2435:	89 c1                	mov    ecx,eax
+    2437:	48 d3 e7             	shl    rdi,cl
+    243a:	48 89 f8             	mov    rax,rdi
+    243d:	48 09 c2             	or     rdx,rax
+    2440:	48 63 c6             	movsxd rax,esi
+    2443:	48 89 94 c5 70 ff ff ff 	mov    QWORD PTR [rbp+rax*8-0x90],rdx
+			   if (new_socket->conn_sock > fdmax) {
+    244b:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+    2452:	8b 10                	mov    edx,DWORD PTR [rax]
+    2454:	8b 85 28 ff ff ff    	mov    eax,DWORD PTR [rbp-0xd8]
+    245a:	39 c2                	cmp    edx,eax
+    245c:	0f 8e ba 03 00 00    	jle    281c <run_client+0x4c7>
+				  fdmax = new_socket->conn_sock;
+    2462:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+    2469:	8b 00                	mov    eax,DWORD PTR [rax]
+    246b:	89 85 28 ff ff ff    	mov    DWORD PTR [rbp-0xd8],eax
+			   }
+			   continue;
+    2471:	e9 a6 03 00 00       	jmp    281c <run_client+0x4c7>
+			}
+			if (new_socket->leave == 1) {
+    2476:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+    247d:	8b 40 08             	mov    eax,DWORD PTR [rax+0x8]
+    2480:	83 f8 01             	cmp    eax,0x1
+    2483:	75 5a                	jne    24df <run_client+0x18a>
+				printf("Socket leaving thread\n");
+    2485:	48 8d 05 56 1c 00 00 	lea    rax,[rip+0x1c56]        # 40e2 <_IO_stdin_used+0xe2>
+    248c:	48 89 c7             	mov    rdi,rax
+    248f:	e8 6c ed ff ff       	call   1200 <puts@plt>
+				FD_CLR(new_socket->conn_sock, &master); // remove from master set
+    2494:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+    249b:	8b 00                	mov    eax,DWORD PTR [rax]
+    249d:	8d 50 3f             	lea    edx,[rax+0x3f]
+    24a0:	85 c0                	test   eax,eax
+    24a2:	0f 48 c2             	cmovs  eax,edx
+    24a5:	c1 f8 06             	sar    eax,0x6
+    24a8:	89 c6                	mov    esi,eax
+    24aa:	48 63 c6             	movsxd rax,esi
+    24ad:	48 8b 94 c5 70 ff ff ff 	mov    rdx,QWORD PTR [rbp+rax*8-0x90]
+    24b5:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+    24bc:	8b 00                	mov    eax,DWORD PTR [rax]
+    24be:	83 e0 3f             	and    eax,0x3f
+    24c1:	bf 01 00 00 00       	mov    edi,0x1
+    24c6:	89 c1                	mov    ecx,eax
+    24c8:	48 d3 e7             	shl    rdi,cl
+    24cb:	48 89 f8             	mov    rax,rdi
+    24ce:	48 f7 d0             	not    rax
+    24d1:	48 21 c2             	and    rdx,rax
+    24d4:	48 63 c6             	movsxd rax,esi
+    24d7:	48 89 94 c5 70 ff ff ff 	mov    QWORD PTR [rbp+rax*8-0x90],rdx
+			}
+			
+			if (new_socket->connect == 1) {
+    24df:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+    24e6:	8b 40 0c             	mov    eax,DWORD PTR [rax+0xc]
+    24e9:	83 f8 01             	cmp    eax,0x1
+    24ec:	0f 85 2a 03 00 00    	jne    281c <run_client+0x4c7>
+				printf("Thread received connection");	
+    24f2:	48 8d 05 ff 1b 00 00 	lea    rax,[rip+0x1bff]        # 40f8 <_IO_stdin_used+0xf8>
+    24f9:	48 89 c7             	mov    rdi,rax
+    24fc:	b8 00 00 00 00       	mov    eax,0x0
+    2501:	e8 4a ed ff ff       	call   1250 <printf@plt>
+				int conn_sock = new_socket->conn_sock;	
+    2506:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+    250d:	8b 00                	mov    eax,DWORD PTR [rax]
+    250f:	89 85 44 ff ff ff    	mov    DWORD PTR [rbp-0xbc],eax
+				epollfd = epoll_create1(0);
+    2515:	bf 00 00 00 00       	mov    edi,0x0
+    251a:	e8 51 ee ff ff       	call   1370 <epoll_create1@plt>
+    251f:	89 85 34 ff ff ff    	mov    DWORD PTR [rbp-0xcc],eax
+				if (epollfd == -1) {
+    2525:	83 bd 34 ff ff ff ff 	cmp    DWORD PTR [rbp-0xcc],0xffffffff
+    252c:	75 19                	jne    2547 <run_client+0x1f2>
+				   perror("new client epoll_create1");
+    252e:	48 8d 05 de 1b 00 00 	lea    rax,[rip+0x1bde]        # 4113 <_IO_stdin_used+0x113>
+    2535:	48 89 c7             	mov    rdi,rax
+    2538:	e8 d3 ed ff ff       	call   1310 <perror@plt>
+				   exit(EXIT_FAILURE);
+    253d:	bf 01 00 00 00       	mov    edi,0x1
+    2542:	e8 e9 ed ff ff       	call   1330 <exit@plt>
+				}
+			   ev.events = EPOLLIN | EPOLLET;
+    2547:	c7 85 64 ff ff ff 01 00 00 80 	mov    DWORD PTR [rbp-0x9c],0x80000001
+			   ev.data.fd = conn_sock;
+    2551:	8b 85 44 ff ff ff    	mov    eax,DWORD PTR [rbp-0xbc]
+    2557:	89 85 68 ff ff ff    	mov    DWORD PTR [rbp-0x98],eax
+			   setunblocking(conn_sock);
+    255d:	8b 85 44 ff ff ff    	mov    eax,DWORD PTR [rbp-0xbc]
+    2563:	89 c7                	mov    edi,eax
+    2565:	e8 95 fd ff ff       	call   22ff <setunblocking>
+			   if (conn_sock > fdmax) {
+    256a:	8b 85 28 ff ff ff    	mov    eax,DWORD PTR [rbp-0xd8]
+    2570:	39 85 44 ff ff ff    	cmp    DWORD PTR [rbp-0xbc],eax
+    2576:	7e 0c                	jle    2584 <run_client+0x22f>
+				  fdmax = conn_sock;
+    2578:	8b 85 44 ff ff ff    	mov    eax,DWORD PTR [rbp-0xbc]
+    257e:	89 85 28 ff ff ff    	mov    DWORD PTR [rbp-0xd8],eax
+			   }
+			   if (epoll_ctl(epollfd, EPOLL_CTL_ADD, conn_sock,
+    2584:	48 8d 85 64 ff ff ff 	lea    rax,[rbp-0x9c]
+    258b:	8b 95 44 ff ff ff    	mov    edx,DWORD PTR [rbp-0xbc]
+    2591:	8b bd 34 ff ff ff    	mov    edi,DWORD PTR [rbp-0xcc]
+    2597:	48 89 c1             	mov    rcx,rax
+    259a:	be 01 00 00 00       	mov    esi,0x1
+    259f:	e8 ec ec ff ff       	call   1290 <epoll_ctl@plt>
+    25a4:	83 f8 ff             	cmp    eax,0xffffffff
+    25a7:	75 19                	jne    25c2 <run_client+0x26d>
+				   &ev) == -1) {
+			   perror("epoll_ctl: conn_sock");
+    25a9:	48 8d 05 fd 1a 00 00 	lea    rax,[rip+0x1afd]        # 40ad <_IO_stdin_used+0xad>
+    25b0:	48 89 c7             	mov    rdi,rax
+    25b3:	e8 58 ed ff ff       	call   1310 <perror@plt>
+			   exit(EXIT_FAILURE);
+    25b8:	bf 01 00 00 00       	mov    edi,0x1
+    25bd:	e8 6e ed ff ff       	call   1330 <exit@plt>
+			   }
+			   FD_SET(conn_sock, &master);
+    25c2:	8b 85 44 ff ff ff    	mov    eax,DWORD PTR [rbp-0xbc]
+    25c8:	8d 50 3f             	lea    edx,[rax+0x3f]
+    25cb:	85 c0                	test   eax,eax
+    25cd:	0f 48 c2             	cmovs  eax,edx
+    25d0:	c1 f8 06             	sar    eax,0x6
+    25d3:	89 c6                	mov    esi,eax
+    25d5:	48 63 c6             	movsxd rax,esi
+    25d8:	48 8b 94 c5 70 ff ff ff 	mov    rdx,QWORD PTR [rbp+rax*8-0x90]
+    25e0:	8b 85 44 ff ff ff    	mov    eax,DWORD PTR [rbp-0xbc]
+    25e6:	83 e0 3f             	and    eax,0x3f
+    25e9:	bf 01 00 00 00       	mov    edi,0x1
+    25ee:	89 c1                	mov    ecx,eax
+    25f0:	48 d3 e7             	shl    rdi,cl
+    25f3:	48 89 f8             	mov    rax,rdi
+    25f6:	48 09 c2             	or     rdx,rax
+    25f9:	48 63 c6             	movsxd rax,esi
+    25fc:	48 89 94 c5 70 ff ff ff 	mov    QWORD PTR [rbp+rax*8-0x90],rdx
+			   connected++;
+    2604:	ff 85 30 ff ff ff    	inc    DWORD PTR [rbp-0xd0]
+			   struct io_operation* announce = calloc(1, sizeof(struct io_operation));
+    260a:	be 10 00 00 00       	mov    esi,0x10
+    260f:	bf 01 00 00 00       	mov    edi,0x1
+    2614:	e8 87 ec ff ff       	call   12a0 <calloc@plt>
+    2619:	48 89 85 58 ff ff ff 	mov    QWORD PTR [rbp-0xa8],rax
+			   announce->conn_sock = conn_sock;
+    2620:	48 8b 85 58 ff ff ff 	mov    rax,QWORD PTR [rbp-0xa8]
+    2627:	8b 95 44 ff ff ff    	mov    edx,DWORD PTR [rbp-0xbc]
+    262d:	89 10                	mov    DWORD PTR [rax],edx
+			   announce->announce = 1;
+    262f:	48 8b 85 58 ff ff ff 	mov    rax,QWORD PTR [rbp-0xa8]
+    2636:	c7 40 04 01 00 00 00 	mov    DWORD PTR [rax+0x4],0x1
+			   printf("There is a new socket push\n");
+    263d:	48 8d 05 e8 1a 00 00 	lea    rax,[rip+0x1ae8]        # 412c <_IO_stdin_used+0x12c>
+    2644:	48 89 c7             	mov    rdi,rax
+    2647:	e8 b4 eb ff ff       	call   1200 <puts@plt>
+			   // push_client(client_t, announce);
+
+			   for (int i = 0 ; i < client_t->num_threads; i++) {
+    264c:	c7 85 38 ff ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0xc8],0x0
+    2656:	eb 5c                	jmp    26b4 <run_client+0x35f>
+					if (i != client_t->thread_num) {
+    2658:	48 8b 85 48 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb8]
+    265f:	8b 80 68 01 00 00    	mov    eax,DWORD PTR [rax+0x168]
+    2665:	39 85 38 ff ff ff    	cmp    DWORD PTR [rbp-0xc8],eax
+    266b:	74 41                	je     26ae <run_client+0x359>
+						push_rb_client(&client_t->announces[i], client_t, announce);
+    266d:	48 8b 85 48 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb8]
+    2674:	48 8b 88 40 01 00 00 	mov    rcx,QWORD PTR [rax+0x140]
+    267b:	8b 85 38 ff ff ff    	mov    eax,DWORD PTR [rbp-0xc8]
+    2681:	48 63 d0             	movsxd rdx,eax
+    2684:	48 89 d0             	mov    rax,rdx
+    2687:	48 c1 e0 02          	shl    rax,0x2
+    268b:	48 01 d0             	add    rax,rdx
+    268e:	48 c1 e0 03          	shl    rax,0x3
+    2692:	48 01 c8             	add    rax,rcx
+    2695:	48 8b 95 58 ff ff ff 	mov    rdx,QWORD PTR [rbp-0xa8]
+    269c:	48 8b 8d 48 ff ff ff 	mov    rcx,QWORD PTR [rbp-0xb8]
+    26a3:	48 89 ce             	mov    rsi,rcx
+    26a6:	48 89 c7             	mov    rdi,rax
+    26a9:	e8 db ed ff ff       	call   1489 <push_rb_client>
+			   for (int i = 0 ; i < client_t->num_threads; i++) {
+    26ae:	ff 85 38 ff ff ff    	inc    DWORD PTR [rbp-0xc8]
+    26b4:	48 8b 85 48 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb8]
+    26bb:	8b 80 48 01 00 00    	mov    eax,DWORD PTR [rax+0x148]
+    26c1:	39 85 38 ff ff ff    	cmp    DWORD PTR [rbp-0xc8],eax
+    26c7:	7c 8f                	jl     2658 <run_client+0x303>
+					}
+			   }
+			   printf("There is a new socket pushed\n");
+    26c9:	48 8d 05 77 1a 00 00 	lea    rax,[rip+0x1a77]        # 4147 <_IO_stdin_used+0x147>
+    26d0:	48 89 c7             	mov    rdi,rax
+    26d3:	e8 28 eb ff ff       	call   1200 <puts@plt>
+    26d8:	e9 3f 01 00 00       	jmp    281c <run_client+0x4c7>
+		   }
+		} else if (connected > 0) {
+    26dd:	83 bd 30 ff ff ff 00 	cmp    DWORD PTR [rbp-0xd0],0x0
+    26e4:	0f 8e 32 01 00 00    	jle    281c <run_client+0x4c7>
+		
+		   nfds = epoll_wait(epollfd, client_t->events, MAX_EVENTS, 100);
+    26ea:	48 8b 85 48 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb8]
+    26f1:	48 8d b0 b0 00 00 00 	lea    rsi,[rax+0xb0]
+    26f8:	8b 85 34 ff ff ff    	mov    eax,DWORD PTR [rbp-0xcc]
+    26fe:	b9 64 00 00 00       	mov    ecx,0x64
+    2703:	ba 0a 00 00 00       	mov    edx,0xa
+    2708:	89 c7                	mov    edi,eax
+    270a:	e8 d1 eb ff ff       	call   12e0 <epoll_wait@plt>
+    270f:	89 85 3c ff ff ff    	mov    DWORD PTR [rbp-0xc4],eax
+		   if (nfds == -1) {
+    2715:	83 bd 3c ff ff ff ff 	cmp    DWORD PTR [rbp-0xc4],0xffffffff
+    271c:	75 19                	jne    2737 <run_client+0x3e2>
+		   perror("epoll_wait");
+    271e:	48 8d 05 3f 1a 00 00 	lea    rax,[rip+0x1a3f]        # 4164 <_IO_stdin_used+0x164>
+    2725:	48 89 c7             	mov    rdi,rax
+    2728:	e8 e3 eb ff ff       	call   1310 <perror@plt>
+		   exit(EXIT_FAILURE);
+    272d:	bf 01 00 00 00       	mov    edi,0x1
+    2732:	e8 f9 eb ff ff       	call   1330 <exit@plt>
+		   }
+
+		   for (n = 0; n < nfds; ++n) {
+    2737:	c7 85 2c ff ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0xd4],0x0
+    2741:	e9 c4 00 00 00       	jmp    280a <run_client+0x4b5>
+			 if (!do_use_fd(client_t, epollfd, ev, client_t->events[n].data.fd, master, &fdmax, listener, client_t->num_threads)) {
+    2746:	48 8b 85 48 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb8]
+    274d:	44 8b 88 48 01 00 00 	mov    r9d,DWORD PTR [rax+0x148]
+    2754:	48 8b 8d 48 ff ff ff 	mov    rcx,QWORD PTR [rbp-0xb8]
+    275b:	8b 85 2c ff ff ff    	mov    eax,DWORD PTR [rbp-0xd4]
+    2761:	48 63 d0             	movsxd rdx,eax
+    2764:	48 89 d0             	mov    rax,rdx
+    2767:	48 01 c0             	add    rax,rax
+    276a:	48 01 d0             	add    rax,rdx
+    276d:	48 c1 e0 02          	shl    rax,0x2
+    2771:	48 01 c8             	add    rax,rcx
+    2774:	48 05 b4 00 00 00    	add    rax,0xb4
+    277a:	44 8b 10             	mov    r10d,DWORD PTR [rax]
+    277d:	44 8b 85 40 ff ff ff 	mov    r8d,DWORD PTR [rbp-0xc0]
+    2784:	48 8d 95 28 ff ff ff 	lea    rdx,[rbp-0xd8]
+    278b:	8b b5 34 ff ff ff    	mov    esi,DWORD PTR [rbp-0xcc]
+    2791:	48 8b bd 48 ff ff ff 	mov    rdi,QWORD PTR [rbp-0xb8]
+    2798:	ff 75 e8             	push   QWORD PTR [rbp-0x18]
+    279b:	ff 75 e0             	push   QWORD PTR [rbp-0x20]
+    279e:	ff 75 d8             	push   QWORD PTR [rbp-0x28]
+    27a1:	ff 75 d0             	push   QWORD PTR [rbp-0x30]
+    27a4:	ff 75 c8             	push   QWORD PTR [rbp-0x38]
+    27a7:	ff 75 c0             	push   QWORD PTR [rbp-0x40]
+    27aa:	ff 75 b8             	push   QWORD PTR [rbp-0x48]
+    27ad:	ff 75 b0             	push   QWORD PTR [rbp-0x50]
+    27b0:	ff 75 a8             	push   QWORD PTR [rbp-0x58]
+    27b3:	ff 75 a0             	push   QWORD PTR [rbp-0x60]
+    27b6:	ff 75 98             	push   QWORD PTR [rbp-0x68]
+    27b9:	ff 75 90             	push   QWORD PTR [rbp-0x70]
+    27bc:	ff 75 88             	push   QWORD PTR [rbp-0x78]
+    27bf:	ff 75 80             	push   QWORD PTR [rbp-0x80]
+    27c2:	ff b5 78 ff ff ff    	push   QWORD PTR [rbp-0x88]
+    27c8:	ff b5 70 ff ff ff    	push   QWORD PTR [rbp-0x90]
+    27ce:	48 83 ec 10          	sub    rsp,0x10
+    27d2:	48 89 e0             	mov    rax,rsp
+    27d5:	48 8b 8d 64 ff ff ff 	mov    rcx,QWORD PTR [rbp-0x9c]
+    27dc:	48 89 08             	mov    QWORD PTR [rax],rcx
+    27df:	8b 8d 6c ff ff ff    	mov    ecx,DWORD PTR [rbp-0x94]
+    27e5:	89 48 08             	mov    DWORD PTR [rax+0x8],ecx
+    27e8:	48 89 d1             	mov    rcx,rdx
+    27eb:	44 89 d2             	mov    edx,r10d
+    27ee:	e8 2a f8 ff ff       	call   201d <do_use_fd>
+    27f3:	48 81 c4 90 00 00 00 	add    rsp,0x90
+    27fa:	85 c0                	test   eax,eax
+    27fc:	75 06                	jne    2804 <run_client+0x4af>
+				connected--;
+    27fe:	ff 8d 30 ff ff ff    	dec    DWORD PTR [rbp-0xd0]
+		   for (n = 0; n < nfds; ++n) {
+    2804:	ff 85 2c ff ff ff    	inc    DWORD PTR [rbp-0xd4]
+    280a:	8b 85 2c ff ff ff    	mov    eax,DWORD PTR [rbp-0xd4]
+    2810:	3b 85 3c ff ff ff    	cmp    eax,DWORD PTR [rbp-0xc4]
+    2816:	0f 8c 2a ff ff ff    	jl     2746 <run_client+0x3f1>
+	while (client_t->running) {
+    281c:	48 8b 85 48 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb8]
+    2823:	8b 00                	mov    eax,DWORD PTR [rax]
+    2825:	85 c0                	test   eax,eax
+    2827:	0f 85 92 fb ff ff    	jne    23bf <run_client+0x6a>
+
+		   }
+
+		}		
+	}
+}
+    282d:	90                   	nop
+    282e:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    2832:	64 48 2b 14 25 28 00 00 00 	sub    rdx,QWORD PTR fs:0x28
+    283b:	74 05                	je     2842 <run_client+0x4ed>
+    283d:	e8 ee e9 ff ff       	call   1230 <__stack_chk_fail@plt>
+    2842:	c9                   	leave  
+    2843:	c3                   	ret    
+
+0000000000002844 <run_server>:
+
+void * run_server(void * args) {
+    2844:	f3 0f 1e fa          	endbr64 
+    2848:	55                   	push   rbp
+    2849:	48 89 e5             	mov    rbp,rsp
+    284c:	53                   	push   rbx
+    284d:	48 81 ec b8 01 00 00 	sub    rsp,0x1b8
+    2854:	48 89 bd 48 fe ff ff 	mov    QWORD PTR [rbp-0x1b8],rdi
+    285b:	64 48 8b 04 25 28 00 00 00 	mov    rax,QWORD PTR fs:0x28
+    2864:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    2868:	31 c0                	xor    eax,eax
+    worker_t *worker_t = args;
+    286a:	48 8b 85 48 fe ff ff 	mov    rax,QWORD PTR [rbp-0x1b8]
+    2871:	48 89 85 90 fe ff ff 	mov    QWORD PTR [rbp-0x170],rax
+
+    int epollfd = worker_t->epollfd;
+    2878:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    287f:	8b 40 04             	mov    eax,DWORD PTR [rax+0x4]
+    2882:	89 85 68 fe ff ff    	mov    DWORD PTR [rbp-0x198],eax
+    struct epoll_event ev = worker_t->ev;
+    2888:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    288f:	48 8b 50 1c          	mov    rdx,QWORD PTR [rax+0x1c]
+    2893:	48 89 95 d4 fe ff ff 	mov    QWORD PTR [rbp-0x12c],rdx
+    289a:	8b 40 24             	mov    eax,DWORD PTR [rax+0x24]
+    289d:	89 85 dc fe ff ff    	mov    DWORD PTR [rbp-0x124],eax
+    struct epoll_event * events = worker_t->events;
+    28a3:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    28aa:	48 83 c0 28          	add    rax,0x28
+    28ae:	48 89 85 98 fe ff ff 	mov    QWORD PTR [rbp-0x168],rax
+    int nfds = worker_t->nfds;
+    28b5:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    28bc:	8b 40 08             	mov    eax,DWORD PTR [rax+0x8]
+    28bf:	89 85 6c fe ff ff    	mov    DWORD PTR [rbp-0x194],eax
+    int n = worker_t->n;
+    28c5:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    28cc:	8b 40 0c             	mov    eax,DWORD PTR [rax+0xc]
+    28cf:	89 85 54 fe ff ff    	mov    DWORD PTR [rbp-0x1ac],eax
+    int listener = worker_t->listener;
+    28d5:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    28dc:	8b 40 10             	mov    eax,DWORD PTR [rax+0x10]
+    28df:	89 85 70 fe ff ff    	mov    DWORD PTR [rbp-0x190],eax
+    socklen_t addrlen = worker_t->addrlen;
+    28e5:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    28ec:	8b 40 18             	mov    eax,DWORD PTR [rax+0x18]
+    28ef:	89 85 50 fe ff ff    	mov    DWORD PTR [rbp-0x1b0],eax
+    struct sockaddr_storage remoteaddr = worker_t->remoteaddr;
+    28f5:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    28fc:	48 8b 88 a0 00 00 00 	mov    rcx,QWORD PTR [rax+0xa0]
+    2903:	48 8b 98 a8 00 00 00 	mov    rbx,QWORD PTR [rax+0xa8]
+    290a:	48 89 8d e0 fe ff ff 	mov    QWORD PTR [rbp-0x120],rcx
+    2911:	48 89 9d e8 fe ff ff 	mov    QWORD PTR [rbp-0x118],rbx
+    2918:	48 8b 88 b0 00 00 00 	mov    rcx,QWORD PTR [rax+0xb0]
+    291f:	48 8b 98 b8 00 00 00 	mov    rbx,QWORD PTR [rax+0xb8]
+    2926:	48 89 8d f0 fe ff ff 	mov    QWORD PTR [rbp-0x110],rcx
+    292d:	48 89 9d f8 fe ff ff 	mov    QWORD PTR [rbp-0x108],rbx
+    2934:	48 8b 88 c0 00 00 00 	mov    rcx,QWORD PTR [rax+0xc0]
+    293b:	48 8b 98 c8 00 00 00 	mov    rbx,QWORD PTR [rax+0xc8]
+    2942:	48 89 8d 00 ff ff ff 	mov    QWORD PTR [rbp-0x100],rcx
+    2949:	48 89 9d 08 ff ff ff 	mov    QWORD PTR [rbp-0xf8],rbx
+    2950:	48 8b 88 d0 00 00 00 	mov    rcx,QWORD PTR [rax+0xd0]
+    2957:	48 8b 98 d8 00 00 00 	mov    rbx,QWORD PTR [rax+0xd8]
+    295e:	48 89 8d 10 ff ff ff 	mov    QWORD PTR [rbp-0xf0],rcx
+    2965:	48 89 9d 18 ff ff ff 	mov    QWORD PTR [rbp-0xe8],rbx
+    296c:	48 8b 88 e0 00 00 00 	mov    rcx,QWORD PTR [rax+0xe0]
+    2973:	48 8b 98 e8 00 00 00 	mov    rbx,QWORD PTR [rax+0xe8]
+    297a:	48 89 8d 20 ff ff ff 	mov    QWORD PTR [rbp-0xe0],rcx
+    2981:	48 89 9d 28 ff ff ff 	mov    QWORD PTR [rbp-0xd8],rbx
+    2988:	48 8b 88 f0 00 00 00 	mov    rcx,QWORD PTR [rax+0xf0]
+    298f:	48 8b 98 f8 00 00 00 	mov    rbx,QWORD PTR [rax+0xf8]
+    2996:	48 89 8d 30 ff ff ff 	mov    QWORD PTR [rbp-0xd0],rcx
+    299d:	48 89 9d 38 ff ff ff 	mov    QWORD PTR [rbp-0xc8],rbx
+    29a4:	48 8b 88 00 01 00 00 	mov    rcx,QWORD PTR [rax+0x100]
+    29ab:	48 8b 98 08 01 00 00 	mov    rbx,QWORD PTR [rax+0x108]
+    29b2:	48 89 8d 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rcx
+    29b9:	48 89 9d 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rbx
+    29c0:	48 8b 90 18 01 00 00 	mov    rdx,QWORD PTR [rax+0x118]
+    29c7:	48 8b 80 10 01 00 00 	mov    rax,QWORD PTR [rax+0x110]
+    29ce:	48 89 85 50 ff ff ff 	mov    QWORD PTR [rbp-0xb0],rax
+    29d5:	48 89 95 58 ff ff ff 	mov    QWORD PTR [rbp-0xa8],rdx
+    int conn_sock = worker_t->conn_sock;
+    29dc:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    29e3:	8b 80 20 01 00 00    	mov    eax,DWORD PTR [rax+0x120]
+    29e9:	89 85 74 fe ff ff    	mov    DWORD PTR [rbp-0x18c],eax
+    int fdmax = worker_t->fdmax;
+    29ef:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    29f6:	8b 40 14             	mov    eax,DWORD PTR [rax+0x14]
+    29f9:	89 85 58 fe ff ff    	mov    DWORD PTR [rbp-0x1a8],eax
+    fd_set master = worker_t->master;
+    29ff:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    2a06:	48 8b 88 28 01 00 00 	mov    rcx,QWORD PTR [rax+0x128]
+    2a0d:	48 8b 98 30 01 00 00 	mov    rbx,QWORD PTR [rax+0x130]
+    2a14:	48 89 8d 60 ff ff ff 	mov    QWORD PTR [rbp-0xa0],rcx
+    2a1b:	48 89 9d 68 ff ff ff 	mov    QWORD PTR [rbp-0x98],rbx
+    2a22:	48 8b 88 38 01 00 00 	mov    rcx,QWORD PTR [rax+0x138]
+    2a29:	48 8b 98 40 01 00 00 	mov    rbx,QWORD PTR [rax+0x140]
+    2a30:	48 89 8d 70 ff ff ff 	mov    QWORD PTR [rbp-0x90],rcx
+    2a37:	48 89 9d 78 ff ff ff 	mov    QWORD PTR [rbp-0x88],rbx
+    2a3e:	48 8b 88 48 01 00 00 	mov    rcx,QWORD PTR [rax+0x148]
+    2a45:	48 8b 98 50 01 00 00 	mov    rbx,QWORD PTR [rax+0x150]
+    2a4c:	48 89 4d 80          	mov    QWORD PTR [rbp-0x80],rcx
+    2a50:	48 89 5d 88          	mov    QWORD PTR [rbp-0x78],rbx
+    2a54:	48 8b 88 58 01 00 00 	mov    rcx,QWORD PTR [rax+0x158]
+    2a5b:	48 8b 98 60 01 00 00 	mov    rbx,QWORD PTR [rax+0x160]
+    2a62:	48 89 4d 90          	mov    QWORD PTR [rbp-0x70],rcx
+    2a66:	48 89 5d 98          	mov    QWORD PTR [rbp-0x68],rbx
+    2a6a:	48 8b 88 68 01 00 00 	mov    rcx,QWORD PTR [rax+0x168]
+    2a71:	48 8b 98 70 01 00 00 	mov    rbx,QWORD PTR [rax+0x170]
+    2a78:	48 89 4d a0          	mov    QWORD PTR [rbp-0x60],rcx
+    2a7c:	48 89 5d a8          	mov    QWORD PTR [rbp-0x58],rbx
+    2a80:	48 8b 88 78 01 00 00 	mov    rcx,QWORD PTR [rax+0x178]
+    2a87:	48 8b 98 80 01 00 00 	mov    rbx,QWORD PTR [rax+0x180]
+    2a8e:	48 89 4d b0          	mov    QWORD PTR [rbp-0x50],rcx
+    2a92:	48 89 5d b8          	mov    QWORD PTR [rbp-0x48],rbx
+    2a96:	48 8b 88 88 01 00 00 	mov    rcx,QWORD PTR [rax+0x188]
+    2a9d:	48 8b 98 90 01 00 00 	mov    rbx,QWORD PTR [rax+0x190]
+    2aa4:	48 89 4d c0          	mov    QWORD PTR [rbp-0x40],rcx
+    2aa8:	48 89 5d c8          	mov    QWORD PTR [rbp-0x38],rbx
+    2aac:	48 8b 90 a0 01 00 00 	mov    rdx,QWORD PTR [rax+0x1a0]
+    2ab3:	48 8b 80 98 01 00 00 	mov    rax,QWORD PTR [rax+0x198]
+    2aba:	48 89 45 d0          	mov    QWORD PTR [rbp-0x30],rax
+    2abe:	48 89 55 d8          	mov    QWORD PTR [rbp-0x28],rdx
+	int connections_per_thread = 0;
+    2ac2:	c7 85 78 fe ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0x188],0x0
+	int connections = 0;
+    2acc:	c7 85 5c fe ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0x1a4],0x0
+	int initial_threads = 5;
+    2ad6:	c7 85 7c fe ff ff 05 00 00 00 	mov    DWORD PTR [rbp-0x184],0x5
+
+
+	struct ringbuffer* io_ringbuffers = calloc(initial_threads, sizeof(struct ringbuffer));
+    2ae0:	8b 85 7c fe ff ff    	mov    eax,DWORD PTR [rbp-0x184]
+    2ae6:	48 98                	cdqe   
+    2ae8:	be 28 00 00 00       	mov    esi,0x28
+    2aed:	48 89 c7             	mov    rdi,rax
+    2af0:	e8 ab e7 ff ff       	call   12a0 <calloc@plt>
+    2af5:	48 89 85 a0 fe ff ff 	mov    QWORD PTR [rbp-0x160],rax
+	for (int i = 0 ; i < initial_threads; i++) {
+    2afc:	c7 85 60 fe ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0x1a0],0x0
+    2b06:	e9 c1 00 00 00       	jmp    2bcc <run_server+0x388>
+	   struct ringbuffer* io_ringbuffer = &io_ringbuffers[i];
+    2b0b:	8b 85 60 fe ff ff    	mov    eax,DWORD PTR [rbp-0x1a0]
+    2b11:	48 63 d0             	movsxd rdx,eax
+    2b14:	48 89 d0             	mov    rax,rdx
+    2b17:	48 c1 e0 02          	shl    rax,0x2
+    2b1b:	48 01 d0             	add    rax,rdx
+    2b1e:	48 c1 e0 03          	shl    rax,0x3
+    2b22:	48 89 c2             	mov    rdx,rax
+    2b25:	48 8b 85 a0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x160]
+    2b2c:	48 01 d0             	add    rax,rdx
+    2b2f:	48 89 85 c0 fe ff ff 	mov    QWORD PTR [rbp-0x140],rax
+	   io_ringbuffer->size = PENDING_IO_SIZE;
+    2b36:	48 8b 85 c0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x140]
+    2b3d:	c7 40 14 64 00 00 00 	mov    DWORD PTR [rax+0x14],0x64
+	   io_ringbuffer->last_head = -1;
+    2b44:	48 8b 85 c0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x140]
+    2b4b:	c7 00 ff ff ff ff    	mov    DWORD PTR [rax],0xffffffff
+	   io_ringbuffer->last_tail = -1;
+    2b51:	48 8b 85 c0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x140]
+    2b58:	c7 40 04 ff ff ff ff 	mov    DWORD PTR [rax+0x4],0xffffffff
+	   io_ringbuffer->tail = 0;
+    2b5f:	48 8b 85 c0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x140]
+    2b66:	c7 40 0c 00 00 00 00 	mov    DWORD PTR [rax+0xc],0x0
+	   io_ringbuffer->head = 0;
+    2b6d:	48 8b 85 c0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x140]
+    2b74:	c7 40 08 00 00 00 00 	mov    DWORD PTR [rax+0x8],0x0
+	   struct io_operation **operations = calloc(100, sizeof(*operations));
+    2b7b:	be 08 00 00 00       	mov    esi,0x8
+    2b80:	bf 64 00 00 00       	mov    edi,0x64
+    2b85:	e8 16 e7 ff ff       	call   12a0 <calloc@plt>
+    2b8a:	48 89 85 c8 fe ff ff 	mov    QWORD PTR [rbp-0x138],rax
+	   io_ringbuffer->operations = operations;
+    2b91:	48 8b 85 c0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x140]
+    2b98:	48 8b 95 c8 fe ff ff 	mov    rdx,QWORD PTR [rbp-0x138]
+    2b9f:	48 89 50 18          	mov    QWORD PTR [rax+0x18],rdx
+		 if (operations == NULL) {
+    2ba3:	48 83 bd c8 fe ff ff 00 	cmp    QWORD PTR [rbp-0x138],0x0
+    2bab:	75 19                	jne    2bc6 <run_server+0x382>
+			 handle_error("calloc per thread ringbuffer");
+    2bad:	48 8d 05 bb 15 00 00 	lea    rax,[rip+0x15bb]        # 416f <_IO_stdin_used+0x16f>
+    2bb4:	48 89 c7             	mov    rdi,rax
+    2bb7:	e8 54 e7 ff ff       	call   1310 <perror@plt>
+    2bbc:	bf 01 00 00 00       	mov    edi,0x1
+    2bc1:	e8 6a e7 ff ff       	call   1330 <exit@plt>
+	for (int i = 0 ; i < initial_threads; i++) {
+    2bc6:	ff 85 60 fe ff ff    	inc    DWORD PTR [rbp-0x1a0]
+    2bcc:	8b 85 60 fe ff ff    	mov    eax,DWORD PTR [rbp-0x1a0]
+    2bd2:	3b 85 7c fe ff ff    	cmp    eax,DWORD PTR [rbp-0x184]
+    2bd8:	0f 8c 2d ff ff ff    	jl     2b0b <run_server+0x2c7>
+		 }
+	}
+
+	struct client_t* client_t = calloc(initial_threads, sizeof(struct client_t));
+    2bde:	8b 85 7c fe ff ff    	mov    eax,DWORD PTR [rbp-0x184]
+    2be4:	48 98                	cdqe   
+    2be6:	be 70 01 00 00       	mov    esi,0x170
+    2beb:	48 89 c7             	mov    rdi,rax
+    2bee:	e8 ad e6 ff ff       	call   12a0 <calloc@plt>
+    2bf3:	48 89 85 a8 fe ff ff 	mov    QWORD PTR [rbp-0x158],rax
+	for (int i = 0 ; i < initial_threads; i++) {
+    2bfa:	c7 85 64 fe ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0x19c],0x0
+    2c04:	e9 84 01 00 00       	jmp    2d8d <run_server+0x549>
+	   struct client_t* args = &client_t[i];
+    2c09:	8b 85 64 fe ff ff    	mov    eax,DWORD PTR [rbp-0x19c]
+    2c0f:	48 98                	cdqe   
+    2c11:	48 69 c0 70 01 00 00 	imul   rax,rax,0x170
+    2c18:	48 8b 95 a8 fe ff ff 	mov    rdx,QWORD PTR [rbp-0x158]
+    2c1f:	48 01 d0             	add    rax,rdx
+    2c22:	48 89 85 b8 fe ff ff 	mov    QWORD PTR [rbp-0x148],rax
+	   pthread_t client;
+	   args->thread_num = i;
+    2c29:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2c30:	8b 95 64 fe ff ff    	mov    edx,DWORD PTR [rbp-0x19c]
+    2c36:	89 90 68 01 00 00    	mov    DWORD PTR [rax+0x168],edx
+	   args->running = 1;
+    2c3c:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2c43:	c7 00 01 00 00 00    	mov    DWORD PTR [rax],0x1
+	   args->fdmax = fdmax;
+    2c49:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2c50:	8b 95 58 fe ff ff    	mov    edx,DWORD PTR [rbp-0x1a8]
+    2c56:	89 50 14             	mov    DWORD PTR [rax+0x14],edx
+	   args->num_client_ts = initial_threads;
+    2c59:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2c60:	8b 95 7c fe ff ff    	mov    edx,DWORD PTR [rbp-0x184]
+    2c66:	89 90 38 01 00 00    	mov    DWORD PTR [rax+0x138],edx
+	   args->num_threads = initial_threads;
+    2c6c:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2c73:	8b 95 7c fe ff ff    	mov    edx,DWORD PTR [rbp-0x184]
+    2c79:	89 90 48 01 00 00    	mov    DWORD PTR [rax+0x148],edx
+	   args->listener = listener;
+    2c7f:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2c86:	8b 95 70 fe ff ff    	mov    edx,DWORD PTR [rbp-0x190]
+    2c8c:	89 50 10             	mov    DWORD PTR [rax+0x10],edx
+	   args->ringbuffer = worker_t->ringbuffer;
+    2c8f:	48 8b 85 90 fe ff ff 	mov    rax,QWORD PTR [rbp-0x170]
+    2c96:	48 8b 90 a8 01 00 00 	mov    rdx,QWORD PTR [rax+0x1a8]
+    2c9d:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2ca4:	48 89 90 a8 00 00 00 	mov    QWORD PTR [rax+0xa8],rdx
+	   args->announces = io_ringbuffers;
+    2cab:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2cb2:	48 8b 95 a0 fe ff ff 	mov    rdx,QWORD PTR [rbp-0x160]
+    2cb9:	48 89 90 40 01 00 00 	mov    QWORD PTR [rax+0x140],rdx
+	   args->thread_ringbuffer = &io_ringbuffers[i];
+    2cc0:	8b 85 64 fe ff ff    	mov    eax,DWORD PTR [rbp-0x19c]
+    2cc6:	48 63 d0             	movsxd rdx,eax
+    2cc9:	48 89 d0             	mov    rax,rdx
+    2ccc:	48 c1 e0 02          	shl    rax,0x2
+    2cd0:	48 01 d0             	add    rax,rdx
+    2cd3:	48 c1 e0 03          	shl    rax,0x3
+    2cd7:	48 89 c2             	mov    rdx,rax
+    2cda:	48 8b 85 a0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x160]
+    2ce1:	48 01 c2             	add    rdx,rax
+    2ce4:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2ceb:	48 89 90 50 01 00 00 	mov    QWORD PTR [rax+0x150],rdx
+	   args->threads = client_t;
+    2cf2:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2cf9:	48 8b 95 a8 fe ff ff 	mov    rdx,QWORD PTR [rbp-0x158]
+    2d00:	48 89 90 30 01 00 00 	mov    QWORD PTR [rax+0x130],rdx
+	   args->size = PENDING_IO_SIZE;
+    2d07:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2d0e:	c7 80 58 01 00 00 64 00 00 00 	mov    DWORD PTR [rax+0x158],0x64
+	   args->client_ts = client_t;
+    2d18:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2d1f:	48 8b 95 a8 fe ff ff 	mov    rdx,QWORD PTR [rbp-0x158]
+    2d26:	48 89 90 60 01 00 00 	mov    QWORD PTR [rax+0x160],rdx
+	   args->num_client_ts = initial_threads;
+    2d2d:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2d34:	8b 95 7c fe ff ff    	mov    edx,DWORD PTR [rbp-0x184]
+    2d3a:	89 90 38 01 00 00    	mov    DWORD PTR [rax+0x138],edx
+	   args->head = INT_MAX;
+    2d40:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2d47:	c7 80 2c 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x12c],0x7fffffff
+	   args->tail = INT_MAX;
+    2d51:	48 8b 85 b8 fe ff ff 	mov    rax,QWORD PTR [rbp-0x148]
+    2d58:	c7 80 28 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x128],0x7fffffff
+	   pthread_create(&client, NULL, run_client, args);
+    2d62:	48 8b 95 b8 fe ff ff 	mov    rdx,QWORD PTR [rbp-0x148]
+    2d69:	48 8d 85 88 fe ff ff 	lea    rax,[rbp-0x178]
+    2d70:	48 89 d1             	mov    rcx,rdx
+    2d73:	48 8d 15 db f5 ff ff 	lea    rdx,[rip+0xfffffffffffff5db]        # 2355 <run_client>
+    2d7a:	be 00 00 00 00       	mov    esi,0x0
+    2d7f:	48 89 c7             	mov    rdi,rax
+    2d82:	e8 79 e5 ff ff       	call   1300 <pthread_create@plt>
+	for (int i = 0 ; i < initial_threads; i++) {
+    2d87:	ff 85 64 fe ff ff    	inc    DWORD PTR [rbp-0x19c]
+    2d8d:	8b 85 64 fe ff ff    	mov    eax,DWORD PTR [rbp-0x19c]
+    2d93:	3b 85 7c fe ff ff    	cmp    eax,DWORD PTR [rbp-0x184]
+    2d99:	0f 8c 6a fe ff ff    	jl     2c09 <run_server+0x3c5>
+	}
+
+	for (;;) {
+       nfds = epoll_wait(epollfd, events, MAX_EVENTS, -1);
+    2d9f:	48 8b b5 98 fe ff ff 	mov    rsi,QWORD PTR [rbp-0x168]
+    2da6:	8b 85 68 fe ff ff    	mov    eax,DWORD PTR [rbp-0x198]
+    2dac:	b9 ff ff ff ff       	mov    ecx,0xffffffff
+    2db1:	ba 0a 00 00 00       	mov    edx,0xa
+    2db6:	89 c7                	mov    edi,eax
+    2db8:	e8 23 e5 ff ff       	call   12e0 <epoll_wait@plt>
+    2dbd:	89 85 6c fe ff ff    	mov    DWORD PTR [rbp-0x194],eax
+       if (nfds == -1) {
+    2dc3:	83 bd 6c fe ff ff ff 	cmp    DWORD PTR [rbp-0x194],0xffffffff
+    2dca:	75 19                	jne    2de5 <run_server+0x5a1>
+	   perror("epoll_wait");
+    2dcc:	48 8d 05 91 13 00 00 	lea    rax,[rip+0x1391]        # 4164 <_IO_stdin_used+0x164>
+    2dd3:	48 89 c7             	mov    rdi,rax
+    2dd6:	e8 35 e5 ff ff       	call   1310 <perror@plt>
+	   exit(EXIT_FAILURE);
+    2ddb:	bf 01 00 00 00       	mov    edi,0x1
+    2de0:	e8 4b e5 ff ff       	call   1330 <exit@plt>
+       }
+
+       for (n = 0; n < nfds; ++n) {
+    2de5:	c7 85 54 fe ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0x1ac],0x0
+    2def:	e9 d4 01 00 00       	jmp    2fc8 <run_server+0x784>
+	   if (events[n].data.fd == listener) {
+    2df4:	8b 85 54 fe ff ff    	mov    eax,DWORD PTR [rbp-0x1ac]
+    2dfa:	48 63 d0             	movsxd rdx,eax
+    2dfd:	48 89 d0             	mov    rax,rdx
+    2e00:	48 01 c0             	add    rax,rax
+    2e03:	48 01 d0             	add    rax,rdx
+    2e06:	48 c1 e0 02          	shl    rax,0x2
+    2e0a:	48 89 c2             	mov    rdx,rax
+    2e0d:	48 8b 85 98 fe ff ff 	mov    rax,QWORD PTR [rbp-0x168]
+    2e14:	48 01 d0             	add    rax,rdx
+    2e17:	8b 40 04             	mov    eax,DWORD PTR [rax+0x4]
+    2e1a:	39 85 70 fe ff ff    	cmp    DWORD PTR [rbp-0x190],eax
+    2e20:	0f 85 9c 01 00 00    	jne    2fc2 <run_server+0x77e>
+	       printf("Socket ready\n");
+    2e26:	48 8d 05 5f 13 00 00 	lea    rax,[rip+0x135f]        # 418c <_IO_stdin_used+0x18c>
+    2e2d:	48 89 c7             	mov    rdi,rax
+    2e30:	e8 cb e3 ff ff       	call   1200 <puts@plt>
+	       addrlen = sizeof remoteaddr;
+    2e35:	c7 85 50 fe ff ff 80 00 00 00 	mov    DWORD PTR [rbp-0x1b0],0x80
+	       conn_sock = accept(listener,
+    2e3f:	48 8d 95 50 fe ff ff 	lea    rdx,[rbp-0x1b0]
+    2e46:	48 8d 85 e0 fe ff ff 	lea    rax,[rbp-0x120]
+    2e4d:	8b 8d 70 fe ff ff    	mov    ecx,DWORD PTR [rbp-0x190]
+    2e53:	48 89 c6             	mov    rsi,rax
+    2e56:	89 cf                	mov    edi,ecx
+    2e58:	e8 c3 e4 ff ff       	call   1320 <accept@plt>
+    2e5d:	89 85 74 fe ff ff    	mov    DWORD PTR [rbp-0x18c],eax
+		(struct sockaddr *)&remoteaddr,
+		&addrlen);
+	       if (conn_sock == -1) {
+    2e63:	83 bd 74 fe ff ff ff 	cmp    DWORD PTR [rbp-0x18c],0xffffffff
+    2e6a:	75 19                	jne    2e85 <run_server+0x641>
+		   perror("accept");
+    2e6c:	48 8d 05 26 13 00 00 	lea    rax,[rip+0x1326]        # 4199 <_IO_stdin_used+0x199>
+    2e73:	48 89 c7             	mov    rdi,rax
+    2e76:	e8 95 e4 ff ff       	call   1310 <perror@plt>
+		   exit(EXIT_FAILURE);
+    2e7b:	bf 01 00 00 00       	mov    edi,0x1
+    2e80:	e8 ab e4 ff ff       	call   1330 <exit@plt>
+	       }
+	       ev.events = EPOLLIN | EPOLLET;
+    2e85:	c7 85 d4 fe ff ff 01 00 00 80 	mov    DWORD PTR [rbp-0x12c],0x80000001
+	       ev.data.fd = conn_sock;
+    2e8f:	8b 85 74 fe ff ff    	mov    eax,DWORD PTR [rbp-0x18c]
+    2e95:	89 85 d8 fe ff ff    	mov    DWORD PTR [rbp-0x128],eax
+	       setunblocking(conn_sock);
+    2e9b:	8b 85 74 fe ff ff    	mov    eax,DWORD PTR [rbp-0x18c]
+    2ea1:	89 c7                	mov    edi,eax
+    2ea3:	e8 57 f4 ff ff       	call   22ff <setunblocking>
+	       if (conn_sock > fdmax) {
+    2ea8:	8b 85 74 fe ff ff    	mov    eax,DWORD PTR [rbp-0x18c]
+    2eae:	3b 85 58 fe ff ff    	cmp    eax,DWORD PTR [rbp-0x1a8]
+    2eb4:	7e 0c                	jle    2ec2 <run_server+0x67e>
+			fdmax = conn_sock;
+    2eb6:	8b 85 74 fe ff ff    	mov    eax,DWORD PTR [rbp-0x18c]
+    2ebc:	89 85 58 fe ff ff    	mov    DWORD PTR [rbp-0x1a8],eax
+			   &ev) == -1) {
+		   perror("epoll_ctl: conn_sock");
+		   exit(EXIT_FAILURE);
+	       }
+		*/
+		   int connections_per_thread = 5;
+    2ec2:	c7 85 80 fe ff ff 05 00 00 00 	mov    DWORD PTR [rbp-0x180],0x5
+		   int max_connections = initial_threads * connections_per_thread; 
+    2ecc:	8b 85 7c fe ff ff    	mov    eax,DWORD PTR [rbp-0x184]
+    2ed2:	0f af 85 80 fe ff ff 	imul   eax,DWORD PTR [rbp-0x180]
+    2ed9:	89 85 84 fe ff ff    	mov    DWORD PTR [rbp-0x17c],eax
+		   if (connections > max_connections) {
+    2edf:	8b 85 5c fe ff ff    	mov    eax,DWORD PTR [rbp-0x1a4]
+    2ee5:	3b 85 84 fe ff ff    	cmp    eax,DWORD PTR [rbp-0x17c]
+    2eeb:	7e 0f                	jle    2efc <run_server+0x6b8>
+		     printf("Too many connections\n");
+    2eed:	48 8d 05 ac 12 00 00 	lea    rax,[rip+0x12ac]        # 41a0 <_IO_stdin_used+0x1a0>
+    2ef4:	48 89 c7             	mov    rdi,rax
+    2ef7:	e8 04 e3 ff ff       	call   1200 <puts@plt>
+		   }
+	       printf("%d is the new socket\n", conn_sock);
+    2efc:	8b 85 74 fe ff ff    	mov    eax,DWORD PTR [rbp-0x18c]
+    2f02:	89 c6                	mov    esi,eax
+    2f04:	48 8d 05 aa 12 00 00 	lea    rax,[rip+0x12aa]        # 41b5 <_IO_stdin_used+0x1b5>
+    2f0b:	48 89 c7             	mov    rdi,rax
+    2f0e:	b8 00 00 00 00       	mov    eax,0x0
+    2f13:	e8 38 e3 ff ff       	call   1250 <printf@plt>
+		   struct io_operation* io_operation = calloc(1, sizeof(struct io_operation)); 
+    2f18:	be 10 00 00 00       	mov    esi,0x10
+    2f1d:	bf 01 00 00 00       	mov    edi,0x1
+    2f22:	e8 79 e3 ff ff       	call   12a0 <calloc@plt>
+    2f27:	48 89 85 b0 fe ff ff 	mov    QWORD PTR [rbp-0x150],rax
+		   io_operation->conn_sock = conn_sock; 
+    2f2e:	48 8b 85 b0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x150]
+    2f35:	8b 95 74 fe ff ff    	mov    edx,DWORD PTR [rbp-0x18c]
+    2f3b:	89 10                	mov    DWORD PTR [rax],edx
+		   io_operation->leave = -1;
+    2f3d:	48 8b 85 b0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x150]
+    2f44:	c7 40 08 ff ff ff ff 	mov    DWORD PTR [rax+0x8],0xffffffff
+		   io_operation->announce = -1;
+    2f4b:	48 8b 85 b0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x150]
+    2f52:	c7 40 04 ff ff ff ff 	mov    DWORD PTR [rax+0x4],0xffffffff
+		   io_operation->connect = 1;
+    2f59:	48 8b 85 b0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x150]
+    2f60:	c7 40 0c 01 00 00 00 	mov    DWORD PTR [rax+0xc],0x1
+		   push_rb(&io_ringbuffers[connections % initial_threads], worker_t, io_operation); // tell assigned thread to begin servicing the socket
+    2f67:	8b 85 5c fe ff ff    	mov    eax,DWORD PTR [rbp-0x1a4]
+    2f6d:	99                   	cdq    
+    2f6e:	f7 bd 7c fe ff ff    	idiv   DWORD PTR [rbp-0x184]
+    2f74:	89 d0                	mov    eax,edx
+    2f76:	48 63 d0             	movsxd rdx,eax
+    2f79:	48 89 d0             	mov    rax,rdx
+    2f7c:	48 c1 e0 02          	shl    rax,0x2
+    2f80:	48 01 d0             	add    rax,rdx
+    2f83:	48 c1 e0 03          	shl    rax,0x3
+    2f87:	48 89 c2             	mov    rdx,rax
+    2f8a:	48 8b 85 a0 fe ff ff 	mov    rax,QWORD PTR [rbp-0x160]
+    2f91:	48 01 d0             	add    rax,rdx
+    2f94:	48 8b 95 b0 fe ff ff 	mov    rdx,QWORD PTR [rbp-0x150]
+    2f9b:	48 8b 8d 90 fe ff ff 	mov    rcx,QWORD PTR [rbp-0x170]
+    2fa2:	48 89 ce             	mov    rsi,rcx
+    2fa5:	48 89 c7             	mov    rdi,rax
+    2fa8:	e8 5b e6 ff ff       	call   1608 <push_rb>
+		   printf("Pushed new socket event\n");
+    2fad:	48 8d 05 17 12 00 00 	lea    rax,[rip+0x1217]        # 41cb <_IO_stdin_used+0x1cb>
+    2fb4:	48 89 c7             	mov    rdi,rax
+    2fb7:	e8 44 e2 ff ff       	call   1200 <puts@plt>
+		   connections++;
+    2fbc:	ff 85 5c fe ff ff    	inc    DWORD PTR [rbp-0x1a4]
+       for (n = 0; n < nfds; ++n) {
+    2fc2:	ff 85 54 fe ff ff    	inc    DWORD PTR [rbp-0x1ac]
+    2fc8:	8b 85 54 fe ff ff    	mov    eax,DWORD PTR [rbp-0x1ac]
+    2fce:	3b 85 6c fe ff ff    	cmp    eax,DWORD PTR [rbp-0x194]
+    2fd4:	0f 8c 1a fe ff ff    	jl     2df4 <run_server+0x5b0>
+       nfds = epoll_wait(epollfd, events, MAX_EVENTS, -1);
+    2fda:	e9 c0 fd ff ff       	jmp    2d9f <run_server+0x55b>
+
+0000000000002fdf <main>:
+	   }
+       }
+   }
+}
+
+int main() {
+    2fdf:	f3 0f 1e fa          	endbr64 
+    2fe3:	55                   	push   rbp
+    2fe4:	48 89 e5             	mov    rbp,rsp
+    2fe7:	53                   	push   rbx
+    2fe8:	48 81 ec a8 05 00 00 	sub    rsp,0x5a8
+    2fef:	64 48 8b 04 25 28 00 00 00 	mov    rax,QWORD PTR fs:0x28
+    2ff8:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    2ffc:	31 c0                	xor    eax,eax
+    int listener;     // listening socket descriptor
+    int newfd;        // newly accept()ed socket descriptor
+    struct sockaddr_storage remoteaddr; // client address
+    socklen_t addrlen;
+
+    FD_ZERO(&master);    // clear the master and temp sets
+    2ffe:	48 8d 85 e0 fa ff ff 	lea    rax,[rbp-0x520]
+    3005:	48 89 85 80 fa ff ff 	mov    QWORD PTR [rbp-0x580],rax
+    300c:	c7 85 58 fa ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0x5a8],0x0
+    3016:	eb 1b                	jmp    3033 <main+0x54>
+    3018:	48 8b 95 80 fa ff ff 	mov    rdx,QWORD PTR [rbp-0x580]
+    301f:	8b 85 58 fa ff ff    	mov    eax,DWORD PTR [rbp-0x5a8]
+    3025:	48 c7 04 c2 00 00 00 00 	mov    QWORD PTR [rdx+rax*8],0x0
+    302d:	ff 85 58 fa ff ff    	inc    DWORD PTR [rbp-0x5a8]
+    3033:	83 bd 58 fa ff ff 0f 	cmp    DWORD PTR [rbp-0x5a8],0xf
+    303a:	76 dc                	jbe    3018 <main+0x39>
+
+    char remoteIP[INET6_ADDRSTRLEN];
+
+    int yes=1;        // for setsockopt() SO_REUSEADDR, below
+    303c:	c7 85 50 fa ff ff 01 00 00 00 	mov    DWORD PTR [rbp-0x5b0],0x1
+    struct epoll_event ev, events[MAX_EVENTS];
+    int conn_sock, nfds, epollfd;
+    int n;
+
+    // get us a socket and bind it
+    memset(&hints, 0, sizeof hints);
+    3046:	48 8d 85 b0 fa ff ff 	lea    rax,[rbp-0x550]
+    304d:	ba 30 00 00 00       	mov    edx,0x30
+    3052:	be 00 00 00 00       	mov    esi,0x0
+    3057:	48 89 c7             	mov    rdi,rax
+    305a:	e8 11 e2 ff ff       	call   1270 <memset@plt>
+    hints.ai_family = AF_UNSPEC;
+    305f:	c7 85 b4 fa ff ff 00 00 00 00 	mov    DWORD PTR [rbp-0x54c],0x0
+    hints.ai_socktype = SOCK_STREAM;
+    3069:	c7 85 b8 fa ff ff 01 00 00 00 	mov    DWORD PTR [rbp-0x548],0x1
+    hints.ai_flags = AI_PASSIVE;
+    3073:	c7 85 b0 fa ff ff 01 00 00 00 	mov    DWORD PTR [rbp-0x550],0x1
+    if ((rv = getaddrinfo(NULL, PORT, &hints, &ai)) != 0) {
+    307d:	48 8d 95 68 fa ff ff 	lea    rdx,[rbp-0x598]
+    3084:	48 8d 85 b0 fa ff ff 	lea    rax,[rbp-0x550]
+    308b:	48 89 d1             	mov    rcx,rdx
+    308e:	48 89 c2             	mov    rdx,rax
+    3091:	48 8d 05 4b 11 00 00 	lea    rax,[rip+0x114b]        # 41e3 <_IO_stdin_used+0x1e3>
+    3098:	48 89 c6             	mov    rsi,rax
+    309b:	bf 00 00 00 00       	mov    edi,0x0
+    30a0:	e8 ab e2 ff ff       	call   1350 <getaddrinfo@plt>
+    30a5:	89 85 5c fa ff ff    	mov    DWORD PTR [rbp-0x5a4],eax
+    30ab:	83 bd 5c fa ff ff 00 	cmp    DWORD PTR [rbp-0x5a4],0x0
+    30b2:	74 38                	je     30ec <main+0x10d>
+        fprintf(stderr, "selectserver: %s\n", gai_strerror(rv));
+    30b4:	8b 85 5c fa ff ff    	mov    eax,DWORD PTR [rbp-0x5a4]
+    30ba:	89 c7                	mov    edi,eax
+    30bc:	e8 9f e1 ff ff       	call   1260 <gai_strerror@plt>
+    30c1:	48 89 c2             	mov    rdx,rax
+    30c4:	48 8b 05 55 2f 00 00 	mov    rax,QWORD PTR [rip+0x2f55]        # 6020 <stderr@GLIBC_2.2.5>
+    30cb:	48 8d 0d 16 11 00 00 	lea    rcx,[rip+0x1116]        # 41e8 <_IO_stdin_used+0x1e8>
+    30d2:	48 89 ce             	mov    rsi,rcx
+    30d5:	48 89 c7             	mov    rdi,rax
+    30d8:	b8 00 00 00 00       	mov    eax,0x0
+    30dd:	e8 ce e1 ff ff       	call   12b0 <fprintf@plt>
+        exit(1);
+    30e2:	bf 01 00 00 00       	mov    edi,0x1
+    30e7:	e8 44 e2 ff ff       	call   1330 <exit@plt>
+    }
+
+    for(p = ai; p != NULL; p = p->ai_next) {
+    30ec:	48 8b 85 68 fa ff ff 	mov    rax,QWORD PTR [rbp-0x598]
+    30f3:	48 89 85 78 fa ff ff 	mov    QWORD PTR [rbp-0x588],rax
+    30fa:	e9 a6 00 00 00       	jmp    31a5 <main+0x1c6>
+        listener = socket(p->ai_family, p->ai_socktype, p->ai_protocol);
+    30ff:	48 8b 85 78 fa ff ff 	mov    rax,QWORD PTR [rbp-0x588]
+    3106:	8b 50 0c             	mov    edx,DWORD PTR [rax+0xc]
+    3109:	48 8b 85 78 fa ff ff 	mov    rax,QWORD PTR [rbp-0x588]
+    3110:	8b 48 08             	mov    ecx,DWORD PTR [rax+0x8]
+    3113:	48 8b 85 78 fa ff ff 	mov    rax,QWORD PTR [rbp-0x588]
+    311a:	8b 40 04             	mov    eax,DWORD PTR [rax+0x4]
+    311d:	89 ce                	mov    esi,ecx
+    311f:	89 c7                	mov    edi,eax
+    3121:	e8 6a e2 ff ff       	call   1390 <socket@plt>
+    3126:	89 85 54 fa ff ff    	mov    DWORD PTR [rbp-0x5ac],eax
+        if (listener < 0) {
+    312c:	83 bd 54 fa ff ff 00 	cmp    DWORD PTR [rbp-0x5ac],0x0
+    3133:	78 5d                	js     3192 <main+0x1b3>
+            continue;
+        }
+
+        // lose the pesky "address already in use" error message
+        setsockopt(listener, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(int));
+    3135:	48 8d 85 50 fa ff ff 	lea    rax,[rbp-0x5b0]
+    313c:	8b bd 54 fa ff ff    	mov    edi,DWORD PTR [rbp-0x5ac]
+    3142:	41 b8 04 00 00 00    	mov    r8d,0x4
+    3148:	48 89 c1             	mov    rcx,rax
+    314b:	ba 02 00 00 00       	mov    edx,0x2
+    3150:	be 01 00 00 00       	mov    esi,0x1
+    3155:	e8 b6 e0 ff ff       	call   1210 <setsockopt@plt>
+
+        if (bind(listener, p->ai_addr, p->ai_addrlen) < 0) {
+    315a:	48 8b 85 78 fa ff ff 	mov    rax,QWORD PTR [rbp-0x588]
+    3161:	8b 50 10             	mov    edx,DWORD PTR [rax+0x10]
+    3164:	48 8b 85 78 fa ff ff 	mov    rax,QWORD PTR [rbp-0x588]
+    316b:	48 8b 48 18          	mov    rcx,QWORD PTR [rax+0x18]
+    316f:	8b 85 54 fa ff ff    	mov    eax,DWORD PTR [rbp-0x5ac]
+    3175:	48 89 ce             	mov    rsi,rcx
+    3178:	89 c7                	mov    edi,eax
+    317a:	e8 71 e1 ff ff       	call   12f0 <bind@plt>
+    317f:	85 c0                	test   eax,eax
+    3181:	79 32                	jns    31b5 <main+0x1d6>
+            close(listener);
+    3183:	8b 85 54 fa ff ff    	mov    eax,DWORD PTR [rbp-0x5ac]
+    3189:	89 c7                	mov    edi,eax
+    318b:	e8 f0 e0 ff ff       	call   1280 <close@plt>
+            continue;
+    3190:	eb 01                	jmp    3193 <main+0x1b4>
+            continue;
+    3192:	90                   	nop
+    for(p = ai; p != NULL; p = p->ai_next) {
+    3193:	48 8b 85 78 fa ff ff 	mov    rax,QWORD PTR [rbp-0x588]
+    319a:	48 8b 40 28          	mov    rax,QWORD PTR [rax+0x28]
+    319e:	48 89 85 78 fa ff ff 	mov    QWORD PTR [rbp-0x588],rax
+    31a5:	48 83 bd 78 fa ff ff 00 	cmp    QWORD PTR [rbp-0x588],0x0
+    31ad:	0f 85 4c ff ff ff    	jne    30ff <main+0x120>
+    31b3:	eb 01                	jmp    31b6 <main+0x1d7>
+        }
+
+        break;
+    31b5:	90                   	nop
+    }
+
+    // if we got here, it means we didn't get bound
+    if (p == NULL) {
+    31b6:	48 83 bd 78 fa ff ff 00 	cmp    QWORD PTR [rbp-0x588],0x0
+    31be:	75 2d                	jne    31ed <main+0x20e>
+        fprintf(stderr, "selectserver: failed to bind\n");
+    31c0:	48 8b 05 59 2e 00 00 	mov    rax,QWORD PTR [rip+0x2e59]        # 6020 <stderr@GLIBC_2.2.5>
+    31c7:	48 89 c1             	mov    rcx,rax
+    31ca:	ba 1d 00 00 00       	mov    edx,0x1d
+    31cf:	be 01 00 00 00       	mov    esi,0x1
+    31d4:	48 8d 05 1f 10 00 00 	lea    rax,[rip+0x101f]        # 41fa <_IO_stdin_used+0x1fa>
+    31db:	48 89 c7             	mov    rdi,rax
+    31de:	e8 5d e1 ff ff       	call   1340 <fwrite@plt>
+        exit(2);
+    31e3:	bf 02 00 00 00       	mov    edi,0x2
+    31e8:	e8 43 e1 ff ff       	call   1330 <exit@plt>
+    }
+
+    freeaddrinfo(ai); // all done with this
+    31ed:	48 8b 85 68 fa ff ff 	mov    rax,QWORD PTR [rbp-0x598]
+    31f4:	48 89 c7             	mov    rdi,rax
+    31f7:	e8 84 e1 ff ff       	call   1380 <freeaddrinfo@plt>
+    if (listen(listener, 10) == -1) {
+    31fc:	8b 85 54 fa ff ff    	mov    eax,DWORD PTR [rbp-0x5ac]
+    3202:	be 0a 00 00 00       	mov    esi,0xa
+    3207:	89 c7                	mov    edi,eax
+    3209:	e8 c2 e0 ff ff       	call   12d0 <listen@plt>
+    320e:	83 f8 ff             	cmp    eax,0xffffffff
+    3211:	75 19                	jne    322c <main+0x24d>
+        perror("listen");
+    3213:	48 8d 05 fe 0f 00 00 	lea    rax,[rip+0xffe]        # 4218 <_IO_stdin_used+0x218>
+    321a:	48 89 c7             	mov    rdi,rax
+    321d:	e8 ee e0 ff ff       	call   1310 <perror@plt>
+        exit(3);
+    3222:	bf 03 00 00 00       	mov    edi,0x3
+    3227:	e8 04 e1 ff ff       	call   1330 <exit@plt>
+    }
+    fdmax = listener;
+    322c:	8b 85 54 fa ff ff    	mov    eax,DWORD PTR [rbp-0x5ac]
+    3232:	89 85 60 fa ff ff    	mov    DWORD PTR [rbp-0x5a0],eax
+
+    /*---Wait for socket connect to complete---*/
+
+     epollfd = epoll_create1(0);
+    3238:	bf 00 00 00 00       	mov    edi,0x0
+    323d:	e8 2e e1 ff ff       	call   1370 <epoll_create1@plt>
+    3242:	89 85 64 fa ff ff    	mov    DWORD PTR [rbp-0x59c],eax
+   if (epollfd == -1) {
+    3248:	83 bd 64 fa ff ff ff 	cmp    DWORD PTR [rbp-0x59c],0xffffffff
+    324f:	75 19                	jne    326a <main+0x28b>
+       perror("epoll_create1");
+    3251:	48 8d 05 c7 0f 00 00 	lea    rax,[rip+0xfc7]        # 421f <_IO_stdin_used+0x21f>
+    3258:	48 89 c7             	mov    rdi,rax
+    325b:	e8 b0 e0 ff ff       	call   1310 <perror@plt>
+       exit(EXIT_FAILURE);
+    3260:	bf 01 00 00 00       	mov    edi,0x1
+    3265:	e8 c6 e0 ff ff       	call   1330 <exit@plt>
+   }
+
+   ev.events = EPOLLIN;
+    326a:	c7 85 a4 fa ff ff 01 00 00 00 	mov    DWORD PTR [rbp-0x55c],0x1
+   ev.data.fd = listener;
+    3274:	8b 85 54 fa ff ff    	mov    eax,DWORD PTR [rbp-0x5ac]
+    327a:	89 85 a8 fa ff ff    	mov    DWORD PTR [rbp-0x558],eax
+   if (epoll_ctl(epollfd, EPOLL_CTL_ADD, listener, &ev) == -1) {
+    3280:	48 8d 85 a4 fa ff ff 	lea    rax,[rbp-0x55c]
+    3287:	8b 95 54 fa ff ff    	mov    edx,DWORD PTR [rbp-0x5ac]
+    328d:	8b bd 64 fa ff ff    	mov    edi,DWORD PTR [rbp-0x59c]
+    3293:	48 89 c1             	mov    rcx,rax
+    3296:	be 01 00 00 00       	mov    esi,0x1
+    329b:	e8 f0 df ff ff       	call   1290 <epoll_ctl@plt>
+    32a0:	83 f8 ff             	cmp    eax,0xffffffff
+    32a3:	75 19                	jne    32be <main+0x2df>
+       perror("epoll_ctl: listen_sock");
+    32a5:	48 8d 05 81 0f 00 00 	lea    rax,[rip+0xf81]        # 422d <_IO_stdin_used+0x22d>
+    32ac:	48 89 c7             	mov    rdi,rax
+    32af:	e8 5c e0 ff ff       	call   1310 <perror@plt>
+       exit(EXIT_FAILURE);
+    32b4:	bf 01 00 00 00       	mov    edi,0x1
+    32b9:	e8 72 e0 ff ff       	call   1330 <exit@plt>
+   }
+	struct ringbuffer *io_ringbuffer = calloc(1, sizeof(struct ringbuffer));
+    32be:	be 28 00 00 00       	mov    esi,0x28
+    32c3:	bf 01 00 00 00       	mov    edi,0x1
+    32c8:	e8 d3 df ff ff       	call   12a0 <calloc@plt>
+    32cd:	48 89 85 88 fa ff ff 	mov    QWORD PTR [rbp-0x578],rax
+	   io_ringbuffer->size = PENDING_IO_SIZE;
+    32d4:	48 8b 85 88 fa ff ff 	mov    rax,QWORD PTR [rbp-0x578]
+    32db:	c7 40 14 64 00 00 00 	mov    DWORD PTR [rax+0x14],0x64
+	   io_ringbuffer->last_head = -1;
+    32e2:	48 8b 85 88 fa ff ff 	mov    rax,QWORD PTR [rbp-0x578]
+    32e9:	c7 00 ff ff ff ff    	mov    DWORD PTR [rax],0xffffffff
+	   io_ringbuffer->last_tail = -1;
+    32ef:	48 8b 85 88 fa ff ff 	mov    rax,QWORD PTR [rbp-0x578]
+    32f6:	c7 40 04 ff ff ff ff 	mov    DWORD PTR [rax+0x4],0xffffffff
+	   io_ringbuffer->tail = 0;
+    32fd:	48 8b 85 88 fa ff ff 	mov    rax,QWORD PTR [rbp-0x578]
+    3304:	c7 40 0c 00 00 00 00 	mov    DWORD PTR [rax+0xc],0x0
+	   io_ringbuffer->head = 0;
+    330b:	48 8b 85 88 fa ff ff 	mov    rax,QWORD PTR [rbp-0x578]
+    3312:	c7 40 08 00 00 00 00 	mov    DWORD PTR [rax+0x8],0x0
+	   struct io_operation **operations = calloc(100, sizeof(*operations));
+    3319:	be 08 00 00 00       	mov    esi,0x8
+    331e:	bf 64 00 00 00       	mov    edi,0x64
+    3323:	e8 78 df ff ff       	call   12a0 <calloc@plt>
+    3328:	48 89 85 90 fa ff ff 	mov    QWORD PTR [rbp-0x570],rax
+	   io_ringbuffer->operations = operations;
+    332f:	48 8b 85 88 fa ff ff 	mov    rax,QWORD PTR [rbp-0x578]
+    3336:	48 8b 95 90 fa ff ff 	mov    rdx,QWORD PTR [rbp-0x570]
+    333d:	48 89 50 18          	mov    QWORD PTR [rax+0x18],rdx
+		 if (operations == NULL) {
+    3341:	48 83 bd 90 fa ff ff 00 	cmp    QWORD PTR [rbp-0x570],0x0
+    3349:	75 19                	jne    3364 <main+0x385>
+			 handle_error("calloc operations");
+    334b:	48 8d 05 f2 0e 00 00 	lea    rax,[rip+0xef2]        # 4244 <_IO_stdin_used+0x244>
+    3352:	48 89 c7             	mov    rdi,rax
+    3355:	e8 b6 df ff ff       	call   1310 <perror@plt>
+    335a:	bf 01 00 00 00       	mov    edi,0x1
+    335f:	e8 cc df ff ff       	call   1330 <exit@plt>
+		 }
+
+   pthread_t worker;
+   printf("%d", sizeof (struct worker_t));
+    3364:	be c8 01 00 00       	mov    esi,0x1c8
+    3369:	48 8d 05 e6 0e 00 00 	lea    rax,[rip+0xee6]        # 4256 <_IO_stdin_used+0x256>
+    3370:	48 89 c7             	mov    rdi,rax
+    3373:	b8 00 00 00 00       	mov    eax,0x0
+    3378:	e8 d3 de ff ff       	call   1250 <printf@plt>
+   worker_t *args = malloc(sizeof (struct worker_t));
+    337d:	bf c8 01 00 00       	mov    edi,0x1c8
+    3382:	e8 39 df ff ff       	call   12c0 <malloc@plt>
+    3387:	48 89 85 98 fa ff ff 	mov    QWORD PTR [rbp-0x568],rax
+   args->thread_num = 1;
+    338e:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    3395:	c7 00 01 00 00 00    	mov    DWORD PTR [rax],0x1
+   args->epollfd = epollfd;
+    339b:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    33a2:	8b 95 64 fa ff ff    	mov    edx,DWORD PTR [rbp-0x59c]
+    33a8:	89 50 04             	mov    DWORD PTR [rax+0x4],edx
+   args->remoteaddr = remoteaddr;
+    33ab:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    33b2:	48 8b 8d 60 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x4a0]
+    33b9:	48 8b 9d 68 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x498]
+    33c0:	48 89 88 a0 00 00 00 	mov    QWORD PTR [rax+0xa0],rcx
+    33c7:	48 89 98 a8 00 00 00 	mov    QWORD PTR [rax+0xa8],rbx
+    33ce:	48 8b 8d 70 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x490]
+    33d5:	48 8b 9d 78 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x488]
+    33dc:	48 89 88 b0 00 00 00 	mov    QWORD PTR [rax+0xb0],rcx
+    33e3:	48 89 98 b8 00 00 00 	mov    QWORD PTR [rax+0xb8],rbx
+    33ea:	48 8b 8d 80 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x480]
+    33f1:	48 8b 9d 88 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x478]
+    33f8:	48 89 88 c0 00 00 00 	mov    QWORD PTR [rax+0xc0],rcx
+    33ff:	48 89 98 c8 00 00 00 	mov    QWORD PTR [rax+0xc8],rbx
+    3406:	48 8b 8d 90 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x470]
+    340d:	48 8b 9d 98 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x468]
+    3414:	48 89 88 d0 00 00 00 	mov    QWORD PTR [rax+0xd0],rcx
+    341b:	48 89 98 d8 00 00 00 	mov    QWORD PTR [rax+0xd8],rbx
+    3422:	48 8b 8d a0 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x460]
+    3429:	48 8b 9d a8 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x458]
+    3430:	48 89 88 e0 00 00 00 	mov    QWORD PTR [rax+0xe0],rcx
+    3437:	48 89 98 e8 00 00 00 	mov    QWORD PTR [rax+0xe8],rbx
+    343e:	48 8b 8d b0 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x450]
+    3445:	48 8b 9d b8 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x448]
+    344c:	48 89 88 f0 00 00 00 	mov    QWORD PTR [rax+0xf0],rcx
+    3453:	48 89 98 f8 00 00 00 	mov    QWORD PTR [rax+0xf8],rbx
+    345a:	48 8b 8d c0 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x440]
+    3461:	48 8b 9d c8 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x438]
+    3468:	48 89 88 00 01 00 00 	mov    QWORD PTR [rax+0x100],rcx
+    346f:	48 89 98 08 01 00 00 	mov    QWORD PTR [rax+0x108],rbx
+    3476:	48 8b 8d d0 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x430]
+    347d:	48 8b 9d d8 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x428]
+    3484:	48 89 88 10 01 00 00 	mov    QWORD PTR [rax+0x110],rcx
+    348b:	48 89 98 18 01 00 00 	mov    QWORD PTR [rax+0x118],rbx
+   args->fdmax = fdmax;
+    3492:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    3499:	8b 95 60 fa ff ff    	mov    edx,DWORD PTR [rbp-0x5a0]
+    349f:	89 50 14             	mov    DWORD PTR [rax+0x14],edx
+   args->listener = listener;
+    34a2:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    34a9:	8b 95 54 fa ff ff    	mov    edx,DWORD PTR [rbp-0x5ac]
+    34af:	89 50 10             	mov    DWORD PTR [rax+0x10],edx
+   args->ev = ev;
+    34b2:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    34b9:	48 8b 95 a4 fa ff ff 	mov    rdx,QWORD PTR [rbp-0x55c]
+    34c0:	48 89 50 1c          	mov    QWORD PTR [rax+0x1c],rdx
+    34c4:	8b 95 ac fa ff ff    	mov    edx,DWORD PTR [rbp-0x554]
+    34ca:	89 50 24             	mov    DWORD PTR [rax+0x24],edx
+   args->master = master;
+    34cd:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    34d4:	48 8b 8d e0 fa ff ff 	mov    rcx,QWORD PTR [rbp-0x520]
+    34db:	48 8b 9d e8 fa ff ff 	mov    rbx,QWORD PTR [rbp-0x518]
+    34e2:	48 89 88 28 01 00 00 	mov    QWORD PTR [rax+0x128],rcx
+    34e9:	48 89 98 30 01 00 00 	mov    QWORD PTR [rax+0x130],rbx
+    34f0:	48 8b 8d f0 fa ff ff 	mov    rcx,QWORD PTR [rbp-0x510]
+    34f7:	48 8b 9d f8 fa ff ff 	mov    rbx,QWORD PTR [rbp-0x508]
+    34fe:	48 89 88 38 01 00 00 	mov    QWORD PTR [rax+0x138],rcx
+    3505:	48 89 98 40 01 00 00 	mov    QWORD PTR [rax+0x140],rbx
+    350c:	48 8b 8d 00 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x500]
+    3513:	48 8b 9d 08 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x4f8]
+    351a:	48 89 88 48 01 00 00 	mov    QWORD PTR [rax+0x148],rcx
+    3521:	48 89 98 50 01 00 00 	mov    QWORD PTR [rax+0x150],rbx
+    3528:	48 8b 8d 10 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x4f0]
+    352f:	48 8b 9d 18 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x4e8]
+    3536:	48 89 88 58 01 00 00 	mov    QWORD PTR [rax+0x158],rcx
+    353d:	48 89 98 60 01 00 00 	mov    QWORD PTR [rax+0x160],rbx
+    3544:	48 8b 8d 20 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x4e0]
+    354b:	48 8b 9d 28 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x4d8]
+    3552:	48 89 88 68 01 00 00 	mov    QWORD PTR [rax+0x168],rcx
+    3559:	48 89 98 70 01 00 00 	mov    QWORD PTR [rax+0x170],rbx
+    3560:	48 8b 8d 30 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x4d0]
+    3567:	48 8b 9d 38 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x4c8]
+    356e:	48 89 88 78 01 00 00 	mov    QWORD PTR [rax+0x178],rcx
+    3575:	48 89 98 80 01 00 00 	mov    QWORD PTR [rax+0x180],rbx
+    357c:	48 8b 8d 40 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x4c0]
+    3583:	48 8b 9d 48 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x4b8]
+    358a:	48 89 88 88 01 00 00 	mov    QWORD PTR [rax+0x188],rcx
+    3591:	48 89 98 90 01 00 00 	mov    QWORD PTR [rax+0x190],rbx
+    3598:	48 8b 8d 50 fb ff ff 	mov    rcx,QWORD PTR [rbp-0x4b0]
+    359f:	48 8b 9d 58 fb ff ff 	mov    rbx,QWORD PTR [rbp-0x4a8]
+    35a6:	48 89 88 98 01 00 00 	mov    QWORD PTR [rax+0x198],rcx
+    35ad:	48 89 98 a0 01 00 00 	mov    QWORD PTR [rax+0x1a0],rbx
+   args->ringbuffer = io_ringbuffer;
+    35b4:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    35bb:	48 8b 95 88 fa ff ff 	mov    rdx,QWORD PTR [rbp-0x578]
+    35c2:	48 89 90 a8 01 00 00 	mov    QWORD PTR [rax+0x1a8],rdx
+   args->size = PENDING_IO_SIZE;
+    35c9:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    35d0:	c7 80 b8 01 00 00 64 00 00 00 	mov    DWORD PTR [rax+0x1b8],0x64
+   args->num_worker_ts = 1;
+    35da:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    35e1:	c7 80 bc 01 00 00 01 00 00 00 	mov    DWORD PTR [rax+0x1bc],0x1
+   args->worker_ts = args;
+    35eb:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    35f2:	48 8b 95 98 fa ff ff 	mov    rdx,QWORD PTR [rbp-0x568]
+    35f9:	48 89 90 c0 01 00 00 	mov    QWORD PTR [rax+0x1c0],rdx
+   args->head = INT_MAX;
+    3600:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    3607:	c7 80 b4 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x1b4],0x7fffffff
+   args->tail = INT_MAX;
+    3611:	48 8b 85 98 fa ff ff 	mov    rax,QWORD PTR [rbp-0x568]
+    3618:	c7 80 b0 01 00 00 ff ff ff 7f 	mov    DWORD PTR [rax+0x1b0],0x7fffffff
+   pthread_create(&worker, NULL, run_server, args);
+    3622:	48 8b 95 98 fa ff ff 	mov    rdx,QWORD PTR [rbp-0x568]
+    3629:	48 8d 85 70 fa ff ff 	lea    rax,[rbp-0x590]
+    3630:	48 89 d1             	mov    rcx,rdx
+    3633:	48 8d 15 0a f2 ff ff 	lea    rdx,[rip+0xfffffffffffff20a]        # 2844 <run_server>
+    363a:	be 00 00 00 00       	mov    esi,0x0
+    363f:	48 89 c7             	mov    rdi,rax
+    3642:	e8 b9 dc ff ff       	call   1300 <pthread_create@plt>
+   pthread_join(worker, NULL);
+    3647:	48 8b 85 70 fa ff ff 	mov    rax,QWORD PTR [rbp-0x590]
+    364e:	be 00 00 00 00       	mov    esi,0x0
+    3653:	48 89 c7             	mov    rdi,rax
+    3656:	e8 05 dd ff ff       	call   1360 <pthread_join@plt>
+    365b:	b8 00 00 00 00       	mov    eax,0x0
+
+}
+    3660:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+    3664:	64 48 2b 14 25 28 00 00 00 	sub    rdx,QWORD PTR fs:0x28
+    366d:	74 05                	je     3674 <main+0x695>
+    366f:	e8 bc db ff ff       	call   1230 <__stack_chk_fail@plt>
+    3674:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    3678:	c9                   	leave  
+    3679:	c3                   	ret    
+
+Disassembly of section .fini:
+
+000000000000367c <_fini>:
+    367c:	f3 0f 1e fa          	endbr64 
+    3680:	48 83 ec 08          	sub    rsp,0x8
+    3684:	48 83 c4 08          	add    rsp,0x8
+    3688:	c3                   	ret    
