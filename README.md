@@ -8,6 +8,8 @@ This allows the computer to scale with the number of connections and CPUs.
 
 This is unlike the traditional forking server or multithreaded socket server which assigns 1 client to 1 thread. This design is more scalable.
 
+The threaded variant epollserver_threaded.c uses Alexander Krizhanovsky's [Lock-Free Multi-Producer Multi-Consumer Queue on Ring Buffer](https://www.linuxjournal.com/content/lock-free-multi-producer-multi-consumer-queue-ring-buffer)
+
 # future plans
 
 I plan to separate the `send` and `recv` into their own threads, so sending and receiving can happen in parallel.
