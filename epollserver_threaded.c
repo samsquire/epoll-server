@@ -495,7 +495,6 @@ pop_nonblocking_rb(struct ringbuffer* rb, struct client_t* client_t)
 		struct client_t *tp = client_t;
 		tp->tail = rb->tail;
 		int unclaimed = rb->tail - rb->head;
-		printf("%d\n", unclaimed);
 		if (abs(unclaimed) > 0) {
 				// printf("Empty\n");
 			// printf("Got tail \n");
@@ -549,6 +548,7 @@ pop_nonblocking_rb(struct ringbuffer* rb, struct client_t* client_t)
 int do_use_fd(struct client_t* client_t, int epollfd, struct epoll_event ev, int i, fd_set master, int *fdmax, int listener, int num_threads) {
 	printf("Waiting for message from socket\n");
     char buf[256];    // buffer for client data
+    memset(buf, '\0', 256);
     int nbytes;
     if ((nbytes = recv(i, buf, sizeof buf, 0)) <= 0) {
 	// got error or connection closed by client
@@ -590,7 +590,7 @@ int do_use_fd(struct client_t* client_t, int epollfd, struct epoll_event ev, int
 			}
 			}
 		}
-	return 0;
+	return 1;
     }
 }
 
@@ -674,7 +674,7 @@ void * run_client(void * args) {
 			   printf("There is a new socket pushed\n");
 		   }
 		} else if (connected > 0) {
-		
+	    printf("There is connected user\n");	
 		   nfds = epoll_wait(epollfd, client_t->events, MAX_EVENTS, 100);
 		   if (nfds == -1) {
 		   perror("epoll_wait");
